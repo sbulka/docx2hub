@@ -1,0 +1,8 @@
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+
+  <!-- mandatory entry -->
+  <rewriteURI uriStartString="http://transpect.io/xslt-util" rewritePrefix="lib/xslt-util"/>
+  <rewriteURI uriStartString="http://transpect.io/" rewritePrefix="../"/>
+
+  <nextCatalog catalog="../lib/xslt-util/xmlcatalog/catalog.xml"/>
+</catalog>
