@@ -4,5 +4,12 @@
   xmlns:mml="http://www.w3.org/1998/Math/MathML"
   xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
   xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"
-  stylesheet="../xsl/tables.xsl">
+  stylesheet="../xsl/main.xsl">
+  <x:param name="debug" select="'no'"/>
+  <x:scenario label="A w:softHyphen">
+    <x:context mode="wml-to-dbk">
+      <w:softHyphen/>
+    </x:context>
+    <x:expect label="should become U+00AD">&#xad;</x:expect>
+  </x:scenario>
 </x:description>
