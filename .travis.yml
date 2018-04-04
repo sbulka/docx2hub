@@ -1,0 +1,10 @@
+language: shell
+
+env:
+    - SAXON_CP=saxon/saxon9he.jar
+    - TESTDIR=${TRAVIS_BUILD_DIR}/xspec
+
+install:
+    - cd ${TESTDIR} && ./install-dependencies.sh
+
+script: cd ${TESTDIR} && ./execute-tests.sh
