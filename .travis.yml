@@ -7,3 +7,4 @@ install:
     - cd ${TRAVIS_BUILD_DIR}/xspec && ./install-dependencies.sh
 
 script: cd ${TRAVIS_BUILD_DIR}/xspec && ./execute-tests.sh
+
