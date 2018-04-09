@@ -2,6 +2,7 @@
 <x:description
   xmlns:docx2hub="http://transpect.io/docx2hub"
   xmlns:x="http://www.jenitennison.com/xslt/xspec"
+  xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
   stylesheet="../xsl/main.xsl">
   <x:param name="debug" select="'no'"/>
   <x:scenario label="Given pt-border-size">
@@ -24,4 +25,123 @@
       <x:expect label="1.5pt is returned" select="'1.5pt'"/>
     </x:scenario>
   </x:scenario>
+
+  <x:scenario label="Given border-atts">
+    <x:scenario label="to no side">
+      <x:context mode="docx2hub:add-props">
+        <w:tc>
+          <w:tcPr>
+             <w:tcW w:w="6041" w:type="dxa"/>
+             <w:gridSpan w:val="2"/>
+          </w:tcPr>
+       </w:tc>
+      </x:context>
+      <x:expect label="css:border-*-style:none">
+        <w:tc>
+          <docx2hub:attribute name="css:border-left-style">none</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-right-style">none</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-top-style">none</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-bottom-style">none</docx2hub:attribute>
+          <docx2hub:attribute name="css:width">302.05pt</docx2hub:attribute>
+          <w:tcPr>
+            <w:tcW w:w="6041" w:type="dxa" />
+            <w:gridSpan w:val="2" />
+          </w:tcPr>
+       </w:tc>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="to all sides">
+      <x:context mode="docx2hub:add-props">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6041" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="12" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="12" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="12" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="2" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+          </w:tcPr>
+       </w:tc>
+      </x:context>
+      <x:expect label="no css:border-*-style:none">
+        <w:tc>
+          <docx2hub:attribute name="css:width">302.05pt</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-top-style">solid</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-top-width">1.5pt</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-left-style">solid</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-left-width">1.5pt</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-bottom-style">solid</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-bottom-width">1.5pt</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-right-style">solid</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-right-width">0.25pt</docx2hub:attribute>
+          <w:tcPr>
+            <w:tcW w:w="6041"
+                   w:type="dxa" />
+            <w:gridSpan w:val="2" />
+            <w:tcBorders>
+              <w:top w:val="single"
+                          w:sz="12"
+                          w:space="0"
+                          w:color="auto" />
+              <w:left w:val="single"
+                          w:sz="12"
+                          w:space="0"
+                          w:color="auto" />
+              <w:bottom w:val="single"
+                          w:sz="12"
+                          w:space="0"
+                          w:color="auto" />
+              <w:right w:val="single"
+                          w:sz="2"
+                          w:space="0"
+                          w:color="auto" />
+            </w:tcBorders>
+          </w:tcPr>
+       </w:tc>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="to top and bottom">
+      <x:context mode="docx2hub:add-props">
+        <w:tc>
+          <w:tcPr>
+             <w:tcW w:w="6041" w:type="dxa"/>
+             <w:gridSpan w:val="2"/>
+             <w:tcBorders>
+                <w:top w:val="thinThickSmallGap" w:sz="24" w:space="0" w:color="auto"/>
+                <w:bottom w:val="thinThickSmallGap" w:sz="24" w:space="0" w:color="auto"/>
+             </w:tcBorders>
+          </w:tcPr>
+       </w:tc>
+      </x:context>
+      <x:expect label="css:border-(left|right)-style:none">
+        <w:tc>
+          <docx2hub:attribute name="css:border-left-style">none</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-right-style">none</docx2hub:attribute>
+          <docx2hub:attribute name="css:width">302.05pt</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-top-style">dashed</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-top-width">3pt</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-bottom-style">dashed</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-bottom-width">3pt</docx2hub:attribute>
+          <w:tcPr>
+            <w:tcW w:w="6041"
+                 w:type="dxa" />
+            <w:gridSpan w:val="2" />
+            <w:tcBorders>
+              <w:top w:val="thinThickSmallGap"
+                      w:sz="24"
+                      w:space="0"
+                      w:color="auto" />
+              <w:bottom w:val="thinThickSmallGap"
+                      w:sz="24"
+                      w:space="0"
+                      w:color="auto" />
+            </w:tcBorders>
+         </w:tcPr>
+        </w:tc>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+>>>>>>> set css-border-style none explicitly
 </x:description>

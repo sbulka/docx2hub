@@ -398,6 +398,10 @@
   </xsl:template>
 
   <xsl:template match="w:tcPr" mode="docx2hub:add-props" priority="2">
+    <xsl:variable name="borders" select="w:tcBorders/w:*/local-name()"/>
+    <xsl:for-each select="('left','right','top','bottom')[not(. = $borders)]">
+      <docx2hub:attribute name="css:border-{.}-style">none</docx2hub:attribute>
+    </xsl:for-each>
     <xsl:apply-templates select="*" mode="#current" />
     <!-- for cellspan etc. processing as defined in tables.xsl: -->
     <xsl:sequence select="." />
