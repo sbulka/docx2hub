@@ -398,6 +398,10 @@
   </xsl:template>
 
   <xsl:template match="w:tcPr" mode="docx2hub:add-props" priority="2">
+    <xsl:variable name="borders" select="w:tcBorders/w:*/local-name()"/>
+    <xsl:for-each select="('left','right','top','bottom')[not(. = $borders)]">
+      <docx2hub:attribute name="css:border-{.}-style">none</docx2hub:attribute>
+    </xsl:for-each>
     <xsl:apply-templates select="*" mode="#current" />
     <!-- for cellspan etc. processing as defined in tables.xsl: -->
     <xsl:sequence select="." />
@@ -1035,7 +1039,8 @@
       <xsl:otherwise>
         <xsl:sequence select="if (matches($val, '%$'))
           then $val
-          else concat(xs:string(xs:integer($val) * 0.125), 'pt')" />
+          else concat(xs:string(min((12, max((0.25, xs:integer($val) * 0.125))))), 'pt')" />
+        <!-- 17.3.4 minimum:0.25pt, maximum: 12pt -->
       </xsl:otherwise>
     </xsl:choose>
   </xsl:function>
