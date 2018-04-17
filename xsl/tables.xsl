@@ -605,4 +605,15 @@
     </xsl:copy>
   </xsl:template>
 
+  <xsl:template
+    match="w:tbl[w:tblPr/w:tblLook[@w:noHBand = ('1', 'true')]]/w:tr/w:tc/@css:*[. = 'inherit'][matches(local-name(), 'bottom|top')]"
+    mode="docx2hub:remove-redundant-run-atts">
+    <xsl:attribute name="{name()}" select="'none'"/>
+  </xsl:template>
+
+  <xsl:template
+    match="w:tbl[w:tblPr/w:tblLook[@w:noVBand = ('1', 'true')]]/w:tr/w:tc/@css:*[. = 'inherit'][matches(local-name(), 'left|right')]"
+    mode="docx2hub:remove-redundant-run-atts">
+    <xsl:attribute name="{name()}" select="'none'"/>
+  </xsl:template>
 </xsl:stylesheet>
