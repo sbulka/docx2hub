@@ -605,6 +605,58 @@
     </xsl:copy>
   </xsl:template>
 
+  <xsl:function name="docx2hub:get-style-properties" as="element()*">
+    <xsl:param name="style-name" as="xs:string"/>
+    <xsl:param name="styles" as="element()*"/><!-- (w:style)* -->
+    <xsl:variable name="style" select="$styles/w:style[@w:styleId = $style-name]" as="element()?"/>
+    <xsl:variable name="resolved-parent-style" select="$style/w:basedOn/docx2hub:get-style-properties(@w:val, $styles)"/>
+    <xsl:sequence select="docx2hub:consolidate-style-properties($style/node(), $resolved-parent-style)"/>
+  </xsl:function>
+
+  <xsl:function name="docx2hub:consolidate-style-properties">
+    <xsl:param name="style1" as="element()*"/>
+    <xsl:param name="style2" as="element()*"/>
+    <xsl:for-each select="$style1">
+      <xsl:variable name="ptype" select="concat(local-name(), @w:type)"/>
+      <xsl:choose>
+        <xsl:when test="not(node())">
+          <!-- copy flat prop from style1 -->
+          <xsl:sequence select="."/>
+        </xsl:when>
+        <xsl:otherwise>
+          <!-- recursive for nested props -->
+          <xsl:element name="{name()}">
+            <xsl:sequence select="@*"/>
+            <xsl:sequence
+              select="docx2hub:consolidate-style-properties(node(), $style2[concat(local-name(), @w:type) = $ptype]/node())"
+            />
+          </xsl:element>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:for-each>
+    <xsl:for-each select="$style2">
+      <xsl:variable name="ptype" as="xs:string"
+        select="concat('', local-name(), @w:type[count($style1/node()[local-name() = current()/local-name()]) gt 1])"/>
+      <xsl:choose>
+        <xsl:when test="$style1[concat('', local-name(), @w:type[count($style1/node()[local-name() = current()/local-name()]) gt 1]) = $ptype]">
+          <!-- this one was copied from style1 already -->
+        </xsl:when>
+        <xsl:otherwise>
+          <!-- props added by style2 -->
+          <xsl:sequence select="."/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:for-each>
+  </xsl:function>
+
+  <xsl:template match="w:body//w:tbl/w:tblPr[w:tblStyle/@w:val]" mode="docx2hub:copy-table-styles">
+    <xsl:variable name="style-attributes" select="docx2hub:get-style-properties(w:tblStyle/@w:val, /w:root/w:styles/w:style)" as="element()*"/>
+    <xsl:copy>
+      <xsl:apply-templates select="@*, node()" mode="#current"/>
+      <xsl:apply-templates select="$style-attributes[local-name() = node()/local-name()]" mode="#current"/>
+    </xsl:copy>
+  </xsl:template>
+
   <xsl:template
     match="w:tbl[w:tblPr/w:tblLook[@w:noHBand = ('1', 'true')]]/w:tr/w:tc/@css:*[. = 'inherit'][matches(local-name(), 'bottom|top')]"
     mode="docx2hub:remove-redundant-run-atts">
