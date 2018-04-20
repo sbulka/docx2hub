@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
+  xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+  xmlns:docx2hub="http://transpect.io/docx2hub"
+  stylesheet="../xsl/main.xsl">
+  <x:param name="debug" select="'no'"/>
+  
+  <x:scenario label="consolidate-style-properties">
+    <x:scenario label="with style1 empty">
+      <x:call function="docx2hub:consolidate-style-properties">
+        <x:param name="style1"/>
+        <x:param name="style2">
+          <w:top w:w="0" w:type="dxa"/>
+        </x:param>
+      </x:call>
+      <x:expect label="return style2">
+        <w:top w:w="0" w:type="dxa"/>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="with style2 empty">
+      <x:call function="docx2hub:consolidate-style-properties">
+        <x:param name="style1">
+          <w:name w:val="Normal Table"/>
+        </x:param>
+        <x:param name="style2"/>
+      </x:call>
+      <x:expect label="return style1">
+        <w:name w:val="Normal Table"/>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="with style2 definining an additional prop">
+      <x:call function="docx2hub:consolidate-style-properties">
+        <x:param name="style1">
+          <w:bottom w:val="single" w:sz="12" w:space="0" w:color="000000"/>
+        </x:param>
+        <x:param name="style2">
+          <w:top w:w="0" w:type="dxa"/>
+        </x:param>
+      </x:call>
+      <x:expect label="return unification of style1+style2">
+        <w:bottom w:val="single" w:sz="12" w:space="0" w:color="000000"/>
+        <w:top w:w="0" w:type="dxa"/>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="with both styles defining the same flat prop">
+      <x:call function="docx2hub:consolidate-style-properties">
+        <x:param name="style1">
+          <w:top w:val="single" w:sz="12" w:space="0" w:color="000000"/>
+        </x:param>
+        <x:param name="style2">
+          <w:top w:w="0" w:type="dxa"/>
+        </x:param>
+      </x:call>
+      <x:expect label="return style1 prop">
+        <w:top w:val="single" w:sz="12" w:space="0" w:color="000000"/>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="with both styles defining a nested prop">
+      <x:call function="docx2hub:consolidate-style-properties">
+        <x:param name="style1">
+          <w:tblBorders>
+            <w:top w:val="single" w:sz="12" w:space="0" w:color="000000"/>
+          </w:tblBorders>
+        </x:param>
+        <x:param name="style2">
+          <w:tblBorders>
+            <w:top w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+          </w:tblBorders>
+        </x:param>
+      </x:call>
+      <x:expect label="return style1 prop">
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="12" w:space="0" w:color="000000"/>
+        </w:tblBorders>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="with style2 adding a nested prop">
+      <x:call function="docx2hub:consolidate-style-properties">
+        <x:param name="style1">
+          <w:name w:val="localTable1"/>
+          <w:basedOn w:val="NormalTable"/>
+          <w:rsid w:val="00091258"/>
+          <w:tblPr>
+            <w:tblBorders>
+              <w:top w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+            </w:tblBorders>
+          </w:tblPr>
+        </x:param>
+        <x:param name="style2">
+          <w:name w:val="Normal Table"/>
+          <w:tblPr>
+            <w:tblInd w:w="0" w:type="dxa"/>
+            <w:tblCellMar>
+              <w:top w:w="0" w:type="dxa"/>
+            </w:tblCellMar>
+          </w:tblPr>
+        </x:param>
+      </x:call>
+      <x:expect label="style1 props and the added from style2">
+        <w:name w:val="localTable1"/>
+          <w:basedOn w:val="NormalTable"/>
+          <w:rsid w:val="00091258"/>
+          <w:tblPr>
+            <w:tblBorders>
+              <w:top w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+            </w:tblBorders>
+            <w:tblInd w:w="0" w:type="dxa"/>
+            <w:tblCellMar>
+              <w:top w:w="0" w:type="dxa"/>
+            </w:tblCellMar>
+          </w:tblPr>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+  
+  <x:scenario label="get-style-properties">
+    <x:scenario label="for tables">
+      <x:scenario label="without linked style">
+        <x:call function="docx2hub:get-style-properties">
+          <x:param name="style-name" select="'NormaleTabelle'"/>
+          <x:param name="styles">
+            <w:styles>
+              <w:style w:type="table" w:default="1" w:styleId="NormaleTabelle">
+                <w:name w:val="Normal Table"/>
+                <w:unhideWhenUsed/>
+                <w:tblPr>
+                  <w:tblInd w:w="0" w:type="dxa"/>
+                  <w:tblCellMar>
+                    <w:top w:w="0" w:type="dxa"/>
+                    <w:left w:w="108" w:type="dxa"/>
+                    <w:bottom w:w="0" w:type="dxa"/>
+                    <w:right w:w="108" w:type="dxa"/>
+                  </w:tblCellMar>
+                </w:tblPr>
+              </w:style>
+            </w:styles>
+          </x:param>
+        </x:call>
+        <x:expect label="returns all elements in style">
+          <w:name w:val="Normal Table"/>
+          <w:unhideWhenUsed/>
+          <w:tblPr>
+            <w:tblInd w:w="0" w:type="dxa"/>
+            <w:tblCellMar>
+              <w:top w:w="0" w:type="dxa"/>
+              <w:left w:w="108" w:type="dxa"/>
+              <w:bottom w:w="0" w:type="dxa"/>
+              <w:right w:w="108" w:type="dxa"/>
+            </w:tblCellMar>
+          </w:tblPr>
+        </x:expect>
+      </x:scenario>
+      <x:scenario label="with linked-style">
+        <x:call function="docx2hub:get-style-properties">
+          <x:param name="style-name" select="'localTable1'"/>
+          <x:param name="styles">
+            <w:styles>
+              <w:style w:type="table" w:styleId="TabelleRaster5">
+                <w:name w:val="Table Grid 5"/>
+                <w:tblPr>
+                  <w:tblBorders>
+                    <w:top w:val="single" w:sz="12" w:space="0" w:color="000000"/>
+                    <w:left w:val="single" w:sz="12" w:space="0" w:color="000000"/>
+                    <w:bottom w:val="single" w:sz="12" w:space="0" w:color="000000"/>
+                    <w:right w:val="single" w:sz="12" w:space="0" w:color="000000"/>
+                    <w:insideH w:val="single" w:sz="6" w:space="0" w:color="000000"/>
+                    <w:insideV w:val="single" w:sz="6" w:space="0" w:color="000000"/>
+                  </w:tblBorders>
+                </w:tblPr>
+              </w:style>
+              <w:style w:type="table" w:customStyle="1" w:styleId="localTable1">
+                <w:name w:val="localTable1"/>
+                <w:basedOn w:val="TabelleRaster5"/>
+                <w:rsid w:val="00091258"/>
+                <w:tblPr>
+                  <w:tblBorders>
+                    <w:top w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+                  </w:tblBorders>
+                </w:tblPr>
+              </w:style>
+            </w:styles>
+          </x:param>
+        </x:call>
+        <x:expect label="parent style attributes where child does not define one">
+          <w:name w:val="localTable1"/>
+          <w:basedOn w:val="TabelleRaster5"/>
+          <w:rsid w:val="00091258"/>
+          <w:tblPr>
+            <w:tblBorders>
+              <w:top w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="12" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="12" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="12" w:space="0" w:color="000000"/>
+              <w:insideH w:val="single" w:sz="6" w:space="0" w:color="000000"/>
+              <w:insideV w:val="single" w:sz="6" w:space="0" w:color="000000"/>
+            </w:tblBorders>
+          </w:tblPr>
+        </x:expect>
+      </x:scenario>
+    </x:scenario>
+  </x:scenario>
+</x:description>
