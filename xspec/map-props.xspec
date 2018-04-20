@@ -37,10 +37,10 @@
       </x:context>
       <x:expect label="css:border-*-style:none">
         <w:tc>
-          <docx2hub:attribute name="css:border-left-style">none</docx2hub:attribute>
-          <docx2hub:attribute name="css:border-right-style">none</docx2hub:attribute>
-          <docx2hub:attribute name="css:border-top-style">none</docx2hub:attribute>
-          <docx2hub:attribute name="css:border-bottom-style">none</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-left-style">inherit</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-right-style">inherit</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-top-style">inherit</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-bottom-style">inherit</docx2hub:attribute>
           <docx2hub:attribute name="css:width">302.05pt</docx2hub:attribute>
           <w:tcPr>
             <w:tcW w:w="6041" w:type="dxa" />
@@ -116,8 +116,8 @@
       </x:context>
       <x:expect label="css:border-(left|right)-style:none">
         <w:tc>
-          <docx2hub:attribute name="css:border-left-style">none</docx2hub:attribute>
-          <docx2hub:attribute name="css:border-right-style">none</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-left-style">inherit</docx2hub:attribute>
+          <docx2hub:attribute name="css:border-right-style">inherit</docx2hub:attribute>
           <docx2hub:attribute name="css:width">302.05pt</docx2hub:attribute>
           <docx2hub:attribute name="css:border-top-style">dashed</docx2hub:attribute>
           <docx2hub:attribute name="css:border-top-width">3pt</docx2hub:attribute>
