@@ -605,21 +605,46 @@
     </xsl:copy>
   </xsl:template>
 
-  <xsl:function name="docx2hub:get-style-properties" as="element()*">
-    <xsl:param name="style-name" as="xs:string"/>
-    <xsl:param name="styles" as="element()*"/><!-- (w:style)* -->
-    <xsl:variable name="style" select="$styles/w:style[@w:styleId = $style-name]" as="element()?"/>
-    <xsl:variable name="resolved-parent-style" select="$style/w:basedOn/docx2hub:get-style-properties(@w:val, $styles)"/>
+  <xsl:template match="w:styles/w:style" exclude-result-prefixes="#all" mode="docx2hub:preprocess-styles">
+    <!-- (w:style)* -->
+    <xsl:variable name="self" select="."/>
+    <xsl:variable name="doc-styles" select="parent::w:styles"/>
+    <xsl:for-each select="('', w:tblStylePr/@w:type)">
+      <xsl:variable name="stripped-style" as="node()">
+        <w:style>
+          <xsl:sequence select="$self/@* except $self/@w:styleId"/>
+          <xsl:attribute name="w:styleId" select="($self[current() = '']/@w:styleId, concat('docx2hub-', $self/@w:styleId, '-',.))[1]"/>
+          <xsl:variable name="bare-props" select="$self/node()[not(self::w:tblStylePr)]" as="node()*"/>
+          <xsl:sequence
+            select="docx2hub:consolidate-style-properties($self/node()[self::w:tblStylePr[@w:type = current()]]/node(), $bare-props)"
+          />
+        </w:style>
+      </xsl:variable>
+      <xsl:element name="{$self/name()}">
+        <xsl:sequence
+          select="$stripped-style/@*, docx2hub:get-style-properties($stripped-style, $doc-styles)[not(self::w:basedOn or self::w:tblStylePr)]"
+        />
+      </xsl:element>
+    </xsl:for-each>
+  </xsl:template>
+  
+  <xsl:function name="docx2hub:get-style-properties" as="node()*">
+    <xsl:param name="style" as="node()"/><!-- w:style -->
+    <xsl:param name="styles" as="node()*"/><!-- (w:style)* -->
+    <xsl:variable name="based-on" select="$style/w:basedOn/@w:val"/>
+    <xsl:variable name="resolved-parent-style"
+      select="if ($based-on) then docx2hub:get-style-properties($styles/node()[@w:styleId = $based-on], $styles) else ()"
+      as="node()*"/>
     <xsl:sequence select="docx2hub:consolidate-style-properties($style/node(), $resolved-parent-style)"/>
   </xsl:function>
 
-  <xsl:function name="docx2hub:consolidate-style-properties">
-    <xsl:param name="style1" as="element()*"/>
-    <xsl:param name="style2" as="element()*"/>
+  <xsl:function name="docx2hub:consolidate-style-properties" as="node()*">
+    <xsl:param name="style1" as="node()*"/>
+    <xsl:param name="style2" as="node()*"/>
     <xsl:for-each select="$style1">
       <xsl:variable name="ptype" select="concat(local-name(), @w:type)"/>
       <xsl:choose>
-        <xsl:when test="not(node())">
+        <xsl:when test="not(node()) and @*">
           <!-- copy flat prop from style1 -->
           <xsl:sequence select="."/>
         </xsl:when>
@@ -649,23 +674,4 @@
     </xsl:for-each>
   </xsl:function>
 
-  <xsl:template match="w:body//w:tbl/w:tblPr[w:tblStyle/@w:val]" mode="docx2hub:copy-table-styles">
-    <xsl:variable name="style-attributes" select="docx2hub:get-style-properties(w:tblStyle/@w:val, /w:root/w:styles/w:style)" as="element()*"/>
-    <xsl:copy>
-      <xsl:apply-templates select="@*, node()" mode="#current"/>
-      <xsl:apply-templates select="$style-attributes[local-name() = node()/local-name()]" mode="#current"/>
-    </xsl:copy>
-  </xsl:template>
-
-  <xsl:template
-    match="w:tbl[w:tblPr/w:tblLook[@w:noHBand = ('1', 'true')]]/w:tr/w:tc/@css:*[. = 'inherit'][matches(local-name(), 'bottom|top')]"
-    mode="docx2hub:remove-redundant-run-atts">
-    <xsl:attribute name="{name()}" select="'none'"/>
-  </xsl:template>
-
-  <xsl:template
-    match="w:tbl[w:tblPr/w:tblLook[@w:noVBand = ('1', 'true')]]/w:tr/w:tc/@css:*[. = 'inherit'][matches(local-name(), 'left|right')]"
-    mode="docx2hub:remove-redundant-run-atts">
-    <xsl:attribute name="{name()}" select="'none'"/>
-  </xsl:template>
 </xsl:stylesheet>
