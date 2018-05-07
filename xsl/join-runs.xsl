@@ -820,7 +820,7 @@
     </xsl:copy>
   </xsl:template>
   
-  <xsl:template match="dbk:informaltable[@css:border-collapse = 'collapse']" mode="docx2hub:join-runs">
+<!--  <xsl:template match="dbk:informaltable[@css:border-collapse = 'collapse']" mode="docx2hub:join-runs">
     <xsl:variable name="curr" select="." as="element()"/>
     <xsl:variable name="css-rule" select="//css:rule[@name = $curr/@role]" as="element()*"/>
     <xsl:variable name="cols" select="dbk:tgroup[1]/@cols" as="xs:decimal"/>
@@ -865,17 +865,17 @@
   
   <xsl:template match="
     dbk:informaltable[@css:border-collapse = 'collapse']//dbk:entry" mode="docx2hub:join-runs">
-    <!-- context will change multiple times, so keep references to nodes which are findable now (but nearly impossible later on) -->
+    <!-\- context will change multiple times, so keep references to nodes which are findable now (but nearly impossible later on) -\->
     <xsl:variable name="curr" select="." as="element()"/>
     <xsl:variable name="colspecs" select="ancestor::dbk:tgroup[1]/dbk:colspec" as="element()+"/>
     <xsl:variable name="table-atts" select="ancestor::dbk:informaltable/@css:*[matches(local-name(), 'border-')]" as="attribute()*"/>
-    <!--<xsl:variable name="is-last-row-thead"
+    <!-\-<xsl:variable name="is-last-row-thead"
       select="parent::dbk:row/parent::dbk:thead and
       calstable:entry-overlaps(., (following-sibling::dbk:entry, parent::dbk:row/following-sibling::dbk:row/dbk:entry), $colspecs)"
       as="xs:boolean"/>
     <xsl:variable name="last-thead-atts"
       select="ancestor::node()[3][$is-last-row-thead]/dbk:tbody/dbk:row[1]/dbk:entry/@css:*[matches(local-name(), 'border-top')]"
-      as="attribute()*"/>-->
+      as="attribute()*"/>-\->
     <xsl:variable name="preceding-entries"
       select="preceding::dbk:entry[ancestor::dbk:informaltable = current()/ancestor::dbk:informaltable]" as="element()*"
     />
@@ -901,6 +901,6 @@
   
   <xsl:template match="@css:*[matches(local-name(), '^border-(left|right|top|bottom)-style$')][. = 'inherit']" mode="docx2hub:join-runs">
     <xsl:attribute name="{name()}" select="'none'"/>
-  </xsl:template>
+  </xsl:template>-->
   
 </xsl:stylesheet>
