@@ -207,7 +207,10 @@
             <xsl:sequence select="$resolve-inside[.//@*], $tblsty/w:tcPr/w:tcBorders"/>
           </xsl:variable>
           <xsl:variable name="adhoc-border"
-            select="(($self/w:tcBorders, $ancestors)/w:*[local-name() = current()])[1]"
+            select="(
+              $self/w:tcBorders/w:*[local-name() = current()],
+              $ancestors/w:*[local-name() = current()]
+            )[1]"
             as="element()?"
           />
           <xsl:variable name="border">
