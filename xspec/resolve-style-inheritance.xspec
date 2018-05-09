@@ -45,6 +45,19 @@
         </w:tblPr>
       </x:expect>
     </x:scenario>
+    <x:scenario label="with style2 adding atts to and existing style1-prop">
+      <x:call function="docx2hub:consolidate-style-properties">
+        <x:param name="style1">
+          <w:spacing w:before="520"/>
+        </x:param>
+        <x:param name="style2">
+          <w:spacing w:line="260" w:lineRule="exact"/>
+        </x:param>
+      </x:call>
+      <x:expect label="return unification of style1+style2">
+        <w:spacing w:line="260" w:lineRule="exact" w:before="520"/>
+      </x:expect>
+    </x:scenario>
     <x:scenario label="with style2 definining an additional prop">
       <x:call function="docx2hub:consolidate-style-properties">
         <x:param name="style1">
