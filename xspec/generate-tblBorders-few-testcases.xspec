@@ -206,9 +206,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none" w:sz="2"/>
-                        <w:left w:val="none" w:sz="2"/>
-                        <w:bottom w:val="none" w:sz="2"/>
+                        <w:top w:val="none"/>
+                        <w:left w:val="none"/>
+                        <w:bottom w:val="none"/>
                       </w:tcBorders>
                     </w:tcPr>
                     <w:p>
@@ -220,9 +220,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none" w:sz="2"/>
-                        <w:left w:val="none" w:sz="2"/>
-                        <w:bottom w:val="none" w:sz="2"/>
+                        <w:top w:val="none"/>
+                        <w:left w:val="none"/>
+                        <w:bottom w:val="none"/>
                       </w:tcBorders>
                     </w:tcPr>
                     <w:p>
@@ -234,9 +234,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none" w:sz="2"/>
-                        <w:left w:val="none" w:sz="2"/>
-                        <w:bottom w:val="none" w:sz="2"/>
+                        <w:top w:val="none"/>
+                        <w:left w:val="none"/>
+                        <w:bottom w:val="none"/>
                         <w:right w:val="single" w:sz="2"/>
                       </w:tcBorders>
                     </w:tcPr>
@@ -251,10 +251,10 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="nil" w:sz="2"/>
-                        <w:left w:val="nil" w:sz="2"/>
-                        <w:bottom w:val="nil" w:sz="2"/>
-                        <w:right w:val="nil" w:sz="2"/>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="nil"/>
                       </w:tcBorders>
                     </w:tcPr>
                     <w:p>
@@ -307,9 +307,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none" w:sz="2"/>
-                        <w:left w:val="none" w:sz="2"/>
-                        <w:bottom w:val="none" w:sz="2"/>
+                        <w:top w:val="none"/>
+                        <w:left w:val="none"/>
+                        <w:bottom w:val="none"/>
                         <w:right w:val="single" w:sz="2"/>
                       </w:tcBorders>
                     </w:tcPr>
@@ -322,9 +322,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none" w:sz="2"/>
-                        <w:left w:val="none" w:sz="2"/>
-                        <w:bottom w:val="none" w:sz="2"/>
+                        <w:top w:val="none"/>
+                        <w:left w:val="none"/>
+                        <w:bottom w:val="none"/>
                         <w:right w:val="single" w:sz="2"/>
                       </w:tcBorders>
                     </w:tcPr>
@@ -337,9 +337,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none" w:sz="2"/>
-                        <w:left w:val="none" w:sz="2"/>
-                        <w:bottom w:val="none" w:sz="2"/>
+                        <w:top w:val="none"/>
+                        <w:left w:val="none"/>
+                        <w:bottom w:val="none"/>
                         <w:right w:val="single" w:sz="2"/>
                       </w:tcBorders>
                     </w:tcPr>
@@ -354,10 +354,10 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="nil" w:sz="2"/>
-                        <w:left w:val="nil" w:sz="2"/>
-                        <w:bottom w:val="nil" w:sz="2"/>
-                        <w:right w:val="nil" w:sz="2"/>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="nil"/>
                       </w:tcBorders>
                     </w:tcPr>
                     <w:p>
@@ -419,9 +419,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none" w:sz="2"/>
-                        <w:bottom w:val="none" w:sz="2"/>
-                        <w:right w:val="none" w:sz="2"/>
+                        <w:top w:val="none"/>
+                        <w:bottom w:val="none"/>
+                        <w:right w:val="none"/>
                       </w:tcBorders>
                     </w:tcPr>
                     <w:p>
@@ -433,9 +433,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none" w:sz="2"/>
-                        <w:left w:val="none" w:sz="2"/>
-                        <w:bottom w:val="none" w:sz="2"/>
+                        <w:top w:val="none"/>
+                        <w:left w:val="none"/>
+                        <w:bottom w:val="none"/>
                       </w:tcBorders>
                     </w:tcPr>
                     <w:p>
@@ -447,9 +447,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none" w:sz="2"/>
-                        <w:left w:val="none" w:sz="2"/>
-                        <w:bottom w:val="none" w:sz="2"/>
+                        <w:top w:val="none"/>
+                        <w:left w:val="none"/>
+                        <w:bottom w:val="none"/>
                         <w:right w:val="single" w:sz="2"/>
                       </w:tcBorders>
                     </w:tcPr>
@@ -464,10 +464,10 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="nil" w:sz="2"/>
-                        <w:left w:val="nil" w:sz="2"/>
-                        <w:bottom w:val="nil" w:sz="2"/>
-                        <w:right w:val="nil" w:sz="2"/>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="nil"/>
                       </w:tcBorders>
                     </w:tcPr>
                     <w:p>
@@ -520,10 +520,10 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none" w:sz="2"/>
+                        <w:top w:val="none"/>
                         <w:left w:val="single" w:sz="2"/>
-                        <w:bottom w:val="none" w:sz="2"/>
-                        <w:right w:val="none" w:sz="2"/>
+                        <w:bottom w:val="none"/>
+                        <w:right w:val="none"/>
                       </w:tcBorders>
                     </w:tcPr>
                     <w:p>
@@ -535,9 +535,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none" w:sz="2"/>
-                        <w:left w:val="none" w:sz="2"/>
-                        <w:bottom w:val="none" w:sz="2"/>
+                        <w:top w:val="none"/>
+                        <w:left w:val="none"/>
+                        <w:bottom w:val="none"/>
                         <w:right w:val="single" w:sz="8"/>
                       </w:tcBorders>
                     </w:tcPr>
@@ -550,9 +550,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none" w:sz="2"/>
-                        <w:left w:val="none" w:sz="2"/>
-                        <w:bottom w:val="none" w:sz="2"/>
+                        <w:top w:val="none"/>
+                        <w:left w:val="none"/>
+                        <w:bottom w:val="none"/>
                         <w:right w:val="single" w:sz="2"/>
                       </w:tcBorders>
                     </w:tcPr>
@@ -567,10 +567,10 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="nil" w:sz="2"/>
-                        <w:left w:val="nil" w:sz="2"/>
-                        <w:bottom w:val="nil" w:sz="2"/>
-                        <w:right w:val="nil" w:sz="2"/>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="nil"/>
                       </w:tcBorders>
                     </w:tcPr>
                     <w:p>
@@ -687,10 +687,10 @@
                 <w:tc>
                   <w:tcPr>
                     <w:tcBorders>
-                      <w:top w:val="nil" w:sz="2"/>
-                      <w:left w:val="nil" w:sz="2"/>
-                      <w:bottom w:val="nil" w:sz="2"/>
-                      <w:right w:val="nil" w:sz="2"/>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
                     </w:tcBorders>
                   </w:tcPr>
                   <w:p>
@@ -702,10 +702,10 @@
                 <w:tc>
                   <w:tcPr>
                     <w:tcBorders>
-                      <w:top w:val="nil" w:sz="2"/>
-                      <w:left w:val="nil" w:sz="2"/>
-                      <w:bottom w:val="nil" w:sz="2"/>
-                      <w:right w:val="nil" w:sz="2"/>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
                     </w:tcBorders>
                   </w:tcPr>
                   <w:p>
@@ -717,10 +717,10 @@
                 <w:tc>
                   <w:tcPr>
                     <w:tcBorders>
-                      <w:top w:val="nil" w:sz="2"/>
-                      <w:left w:val="nil" w:sz="2"/>
-                      <w:bottom w:val="nil" w:sz="2"/>
-                      <w:right w:val="nil" w:sz="2"/>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
                     </w:tcBorders>
                   </w:tcPr>
                   <w:p>
@@ -734,10 +734,10 @@
                 <w:tc>
                   <w:tcPr>
                     <w:tcBorders>
-                      <w:top w:val="nil" w:sz="2"/>
-                      <w:left w:val="nil" w:sz="2"/>
-                      <w:bottom w:val="nil" w:sz="2"/>
-                      <w:right w:val="nil" w:sz="2"/>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
                     </w:tcBorders>
                   </w:tcPr>
                   <w:p>
@@ -749,10 +749,10 @@
                 <w:tc>
                   <w:tcPr>
                     <w:tcBorders>
-                      <w:top w:val="nil" w:sz="2"/>
-                      <w:left w:val="nil" w:sz="2"/>
-                      <w:bottom w:val="nil" w:sz="2"/>
-                      <w:right w:val="nil" w:sz="2"/>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
                     </w:tcBorders>
                   </w:tcPr>
                   <w:p>
@@ -766,10 +766,10 @@
                 
                 <w:tc>
                   <w:tcPr> <w:tcBorders>
-                    <w:top w:val="nil" w:sz="2"/>
-                    <w:left w:val="nil" w:sz="2"/>
-                    <w:bottom w:val="nil" w:sz="2"/>
-                    <w:right w:val="nil" w:sz="2"/>
+                    <w:top w:val="nil"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
                   </w:tcBorders></w:tcPr>
                   <w:p>
                     <w:r>
@@ -864,10 +864,10 @@
                 <w:tc>
                   <w:tcPr>
                     <w:tcBorders>
-                      <w:top w:val="nil" w:sz="2"/>
+                      <w:top w:val="nil"/>
                       <w:left w:val="single" w:sz="2"/>
-                      <w:bottom w:val="nil" w:sz="2"/>
-                      <w:right w:val="nil" w:sz="2"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
                     </w:tcBorders>
                   </w:tcPr>
                   <w:p>
@@ -879,10 +879,10 @@
                 <w:tc>
                   <w:tcPr>
                     <w:tcBorders>
-                      <w:top w:val="nil" w:sz="2"/>
+                      <w:top w:val="nil"/>
                       <w:left w:val="single" w:sz="2"/>
                       <w:bottom w:val="single" w:sz="2"/>
-                      <w:right w:val="nil" w:sz="2"/>
+                      <w:right w:val="nil"/>
                     </w:tcBorders>
                   </w:tcPr>
                   <w:p>
@@ -894,7 +894,7 @@
                 <w:tc>
                   <w:tcPr>
                     <w:tcBorders>
-                      <w:top w:val="nil" w:sz="2"/>
+                      <w:top w:val="nil"/>
                       <w:left w:val="single" w:sz="2"/>
                       <w:bottom w:val="single" w:sz="2"/>
                       <w:right w:val="single" w:sz="2"/>
@@ -911,10 +911,10 @@
                 <w:tc>
                   <w:tcPr>
                     <w:tcBorders>
-                      <w:top w:val="nil" w:sz="2"/>
-                      <w:left w:val="nil" w:sz="2"/>
-                      <w:bottom w:val="nil" w:sz="2"/>
-                      <w:right w:val="nil" w:sz="2"/>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
                     </w:tcBorders>
                   </w:tcPr>
                   <w:p>
@@ -926,10 +926,10 @@
                 <w:tc>
                   <w:tcPr>
                     <w:tcBorders>
-                      <w:top w:val="nil" w:sz="2"/>
-                      <w:left w:val="nil" w:sz="2"/>
-                      <w:bottom w:val="nil" w:sz="2"/>
-                      <w:right w:val="nil" w:sz="2"/>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
                     </w:tcBorders>
                   </w:tcPr>
                   <w:p>
@@ -943,10 +943,10 @@
                 
                 <w:tc>
                   <w:tcPr><w:tcBorders>
-                    <w:top w:val="nil" w:sz="2"/>
-                    <w:left w:val="nil" w:sz="2"/>
-                    <w:bottom w:val="nil" w:sz="2"/>
-                    <w:right w:val="nil" w:sz="2"/>
+                    <w:top w:val="nil"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
                   </w:tcBorders> </w:tcPr>
                   <w:p>
                     <w:r>
@@ -986,10 +986,10 @@
                             <w:tc>
                               <w:tcPr>
                                 <w:tcBorders>
-                                  <w:top w:val="none" w:sz="2"/>
-                                  <w:left w:val="none" w:sz="2"/>
-                                  <w:bottom w:val="none" w:sz="2"/>
-                                  <w:right w:val="none" w:sz="2"/>
+                                  <w:top w:val="none"/>
+                                  <w:left w:val="none"/>
+                                  <w:bottom w:val="none"/>
+                                  <w:right w:val="none"/>
                                 </w:tcBorders>
                               </w:tcPr>
                             </w:tc>
@@ -1010,10 +1010,10 @@
                             <w:tc>
                               <w:tcPr>
                                 <w:tcBorders>
-                                  <w:top w:val="none" w:sz="2"/>
-                                  <w:left w:val="none" w:sz="2"/>
-                                  <w:bottom w:val="none" w:sz="2"/>
-                                  <w:right w:val="none" w:sz="2"/>
+                                  <w:top w:val="none"/>
+                                  <w:left w:val="none"/>
+                                  <w:bottom w:val="none"/>
+                                  <w:right w:val="none"/>
                                 </w:tcBorders>
                               </w:tcPr>
                             </w:tc>
@@ -1041,10 +1041,10 @@
                         <w:tbl>
                           <w:tblPr>
                             <w:tblBorders>
-                              <w:top w:val="none" w:sz="2"/>
-                              <w:left w:val="none" w:sz="2"/>
-                              <w:bottom w:val="none" w:sz="2"/>
-                              <w:right w:val="none" w:sz="2"/>
+                              <w:top w:val="none"/>
+                              <w:left w:val="none"/>
+                              <w:bottom w:val="none"/>
+                              <w:right w:val="none"/>
                             </w:tblBorders>
                           </w:tblPr>
                           <w:tr>
@@ -1065,10 +1065,10 @@
                         <w:tbl>
                           <w:tblPr>
                             <w:tblBorders>
-                              <w:top w:val="none" w:sz="2"/>
-                              <w:left w:val="none" w:sz="2"/>
-                              <w:bottom w:val="none" w:sz="2"/>
-                              <w:right w:val="none" w:sz="2"/>
+                              <w:top w:val="none"/>
+                              <w:left w:val="none"/>
+                              <w:bottom w:val="none"/>
+                              <w:right w:val="none"/>
                             </w:tblBorders>
                           </w:tblPr>
                           <w:tr>
@@ -1116,10 +1116,10 @@
                             <w:tc>
                               <w:tcPr>
                                 <w:tcBorders>
-                                  <w:top w:val="nil" w:sz="2"/>
-                                  <w:left w:val="nil" w:sz="2"/>
-                                  <w:bottom w:val="nil" w:sz="2"/>
-                                  <w:right w:val="nil" w:sz="2"/>
+                                  <w:top w:val="nil"/>
+                                  <w:left w:val="nil"/>
+                                  <w:bottom w:val="nil"/>
+                                  <w:right w:val="nil"/>
                                 </w:tcBorders>
                               </w:tcPr>
                             </w:tc>
@@ -1140,10 +1140,10 @@
                             <w:tc>
                               <w:tcPr>
                                 <w:tcBorders>
-                                  <w:top w:val="nil" w:sz="2"/>
-                                  <w:left w:val="nil" w:sz="2"/>
-                                  <w:bottom w:val="nil" w:sz="2"/>
-                                  <w:right w:val="nil" w:sz="2"/>
+                                  <w:top w:val="nil"/>
+                                  <w:left w:val="nil"/>
+                                  <w:bottom w:val="nil"/>
+                                  <w:right w:val="nil"/>
                                 </w:tcBorders>
                               </w:tcPr>
                             </w:tc>
@@ -1181,8 +1181,8 @@
                             <w:tc>
                               <w:tcPr>
                                 <w:tcBorders>
-                                  <w:bottom w:val="none" w:sz="2"/>
-                                  <w:right w:val="nil" w:sz="2"/>
+                                  <w:bottom w:val="none"/>
+                                  <w:right w:val="nil"/>
                                 </w:tcBorders>
                               </w:tcPr>
                             </w:tc>
@@ -1205,8 +1205,8 @@
                                 <w:tcBorders>
                                   <w:top w:val="solid" w:sz="2"/>
                                   <w:left w:val="solid" w:sz="2"/>
-                                  <w:bottom w:val="none" w:sz="2"/>
-                                  <w:right w:val="nil" w:sz="2"/>
+                                  <w:bottom w:val="none"/>
+                                  <w:right w:val="nil"/>
                                 </w:tcBorders>
                               </w:tcPr>
                             </w:tc>
@@ -1235,16 +1235,16 @@
                           <w:tblPr>
                             <w:tblBorders>
                               <w:top w:val="solid" w:sz="2"/>
-                              <w:bottom w:val="none" w:sz="2"/>
-                              <w:right w:val="nil" w:sz="2"/>
+                              <w:bottom w:val="none"/>
+                              <w:right w:val="nil"/>
                             </w:tblBorders>
                           </w:tblPr>
                           <w:tr>
                             <w:tc>
                               <w:tcPr>
                                 <w:tcBorders>
-                                  <w:bottom w:val="none" w:sz="2"/>
-                                  <w:right w:val="none" w:sz="2"/>
+                                  <w:bottom w:val="none"/>
+                                  <w:right w:val="none"/>
                                 </w:tcBorders>
                               </w:tcPr>
                             </w:tc>
@@ -1256,8 +1256,8 @@
                           <w:tblPr>
                             <w:tblBorders>
                               <w:top w:val="solid" w:sz="2"/>
-                              <w:bottom w:val="none" w:sz="2"/>
-                              <w:right w:val="nil" w:sz="2"/>
+                              <w:bottom w:val="none"/>
+                              <w:right w:val="nil"/>
                             </w:tblBorders>
                           </w:tblPr>
                           <w:tr>
@@ -1265,9 +1265,9 @@
                               <w:tcPr>
                                 <w:tcBorders>
                                   <w:top w:val="solid" w:sz="2"/>
-                                  <w:left w:val="nil" w:sz="2"/>
-                                  <w:bottom w:val="none" w:sz="2"/>
-                                  <w:right w:val="none" w:sz="2"/>
+                                  <w:left w:val="nil"/>
+                                  <w:bottom w:val="none"/>
+                                  <w:right w:val="none"/>
                                 </w:tcBorders>
                               </w:tcPr>
                             </w:tc>
@@ -1298,8 +1298,8 @@
                           <w:tblPr>
                             <w:tblBorders>
                               <w:top w:val="solid" w:sz="2"/>
-                              <w:bottom w:val="none" w:sz="2"/>
-                              <w:right w:val="nil" w:sz="2"/>
+                              <w:bottom w:val="none"/>
+                              <w:right w:val="nil"/>
                             </w:tblBorders>
                           </w:tblPr>
                           <w:tr>
@@ -1307,8 +1307,8 @@
                               <w:tcPr>
                                 <w:tcBorders>
                                   <w:left w:val="solid" w:sz="2"/>
-                                  <w:bottom w:val="none" w:sz="2"/>
-                                  <w:right w:val="none" w:sz="2"/>
+                                  <w:bottom w:val="none"/>
+                                  <w:right w:val="none"/>
                                 </w:tcBorders>
                               </w:tcPr>
                             </w:tc>
@@ -1320,8 +1320,8 @@
                           <w:tblPr>
                             <w:tblBorders>
                               <w:top w:val="solid" w:sz="2"/>
-                              <w:bottom w:val="none" w:sz="2"/>
-                              <w:right w:val="nil" w:sz="2"/>
+                              <w:bottom w:val="none"/>
+                              <w:right w:val="nil"/>
                             </w:tblBorders>
                           </w:tblPr>
                           <w:tr>
@@ -1330,8 +1330,8 @@
                                 <w:tcBorders>
                                   <w:top w:val="solid" w:sz="2"/>
                                   <w:left w:val="solid" w:sz="2"/>
-                                  <w:bottom w:val="none" w:sz="2"/>
-                                  <w:right w:val="none" w:sz="2"/>
+                                  <w:bottom w:val="none"/>
+                                  <w:right w:val="none"/>
                                 </w:tcBorders>
                               </w:tcPr>
                             </w:tc>
@@ -1366,10 +1366,10 @@
                             <w:tc>
                               <w:tcPr>
                                 <w:tcBorders>
-                                  <w:top w:val="none" w:sz="2"/>
-                                  <w:left w:val="none" w:sz="2"/>
-                                  <w:bottom w:val="none" w:sz="2"/>
-                                  <w:right w:val="none" w:sz="2"/>
+                                  <w:top w:val="none"/>
+                                  <w:left w:val="none"/>
+                                  <w:bottom w:val="none"/>
+                                  <w:right w:val="none"/>
                                 </w:tcBorders>
                               </w:tcPr>
                             </w:tc>
@@ -1387,10 +1387,10 @@
                             <w:tc>
                               <w:tcPr>
                                 <w:tcBorders>
-                                  <w:top w:val="none" w:sz="2"/>
-                                  <w:left w:val="none" w:sz="2"/>
-                                  <w:bottom w:val="none" w:sz="2"/>
-                                  <w:right w:val="none" w:sz="2"/>
+                                  <w:top w:val="none"/>
+                                  <w:left w:val="none"/>
+                                  <w:bottom w:val="none"/>
+                                  <w:right w:val="none"/>
                                 </w:tcBorders>
                               </w:tcPr>
                             </w:tc>
@@ -1425,7 +1425,7 @@
                             <w:tc>
                               <w:tcPr>
                                 <w:tcBorders>
-                                  <w:bottom w:val="none" w:sz="2"/>
+                                  <w:bottom w:val="none"/>
                                 </w:tcBorders>
                               </w:tcPr>
                             </w:tc>
@@ -1443,9 +1443,9 @@
                             <w:tc>
                               <w:tcPr>
                                 <w:tcBorders>
-                                  <w:top w:val="nil" w:sz="2"/>
-                                  <w:left w:val="nil" w:sz="2"/>
-                                  <w:bottom w:val="none" w:sz="2"/>
+                                  <w:top w:val="nil"/>
+                                  <w:left w:val="nil"/>
+                                  <w:bottom w:val="none"/>
                                   <w:right w:val="solid" w:sz="2"/>
                                 </w:tcBorders>
                               </w:tcPr>
@@ -1491,10 +1491,10 @@
                             <w:tc>
                               <w:tcPr>
                                 <w:tcBorders>
-                                  <w:top w:val="nil" w:sz="2"/>
-                                  <w:left w:val="nil" w:sz="2"/>
-                                  <w:bottom w:val="nil" w:sz="2"/>
-                                  <w:right w:val="nil" w:sz="2"/>
+                                  <w:top w:val="nil"/>
+                                  <w:left w:val="nil"/>
+                                  <w:bottom w:val="nil"/>
+                                  <w:right w:val="nil"/>
                                 </w:tcBorders>
                               </w:tcPr>
                             </w:tc>
