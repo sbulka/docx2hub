@@ -20,7 +20,8 @@
                   <w:insideH w:val="single" w:sz="2"/>
                   <w:insideV w:val="single" w:sz="2"/>
                 </w:tblBorders>
-              </w:tblPr> <w:tr>
+              </w:tblPr>
+              <w:tr>
                 <w:tc>
                   <w:tcPr> </w:tcPr>
                   <w:p>
@@ -47,7 +48,6 @@
                 </w:tc>
               </w:tr>
               <w:tr>
-                <w:trPr> </w:trPr>
                 <w:tc>
                   <w:tcPr> </w:tcPr>
                   <w:p>
@@ -66,7 +66,6 @@
                 </w:tc>
               </w:tr>
               <w:tr>
-                <w:trPr> </w:trPr>
                 <w:tc>
                   <w:tcPr> </w:tcPr>
                   <w:p>
@@ -89,7 +88,8 @@
                   <w:insideH w:val="single" w:sz="2"/>
                   <w:insideV w:val="single" w:sz="2"/>
                 </w:tblBorders>
-              </w:tblPr> <w:tr>
+              </w:tblPr>
+              <w:tr>
                 <w:tc>
                   <w:tcPr>
                     <w:tcBorders>
@@ -168,17 +168,15 @@
                   </w:p>
                 </w:tc>
               </w:tr>
-              <w:tr>
-                <w:tcPr>
-                  <w:tcBorders>
-                    <w:top w:val="single" w:sz="2"/>
-                    <w:left w:val="single" w:sz="2"/>
-                    <w:bottom w:val="single" w:sz="2"/>
-                    <w:right w:val="single" w:sz="2"/>
-                  </w:tcBorders>
-                </w:tcPr>
-                <w:tc>
-                  <w:tcPr> </w:tcPr>
+              <w:tr> <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="single" w:sz="2"/>
+                      <w:left w:val="single" w:sz="2"/>
+                      <w:bottom w:val="single" w:sz="2"/>
+                      <w:right w:val="single" w:sz="2"/>
+                    </w:tcBorders>
+                  </w:tcPr>
                   <w:p>
                     <w:r>
                       <w:t>d</w:t>
@@ -203,7 +201,8 @@
                     <w:insideH w:val="single" w:sz="2"/>
                     <w:insideV w:val="single" w:sz="2"/>
                   </w:tblBorders>
-                </w:tblPr> <w:tr>
+                </w:tblPr>
+                <w:tr>
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
@@ -249,16 +248,15 @@
                   </w:tc>
                 </w:tr>
                 <w:tr>
-                  <w:tcPr>
-                    <w:tcBorders>
-                      <w:top w:val="nil" w:sz="2"/>
-                      <w:left w:val="nil" w:sz="2"/>
-                      <w:bottom w:val="nil" w:sz="2"/>
-                      <w:right w:val="nil" w:sz="2"/>
-                    </w:tcBorders>
-                  </w:tcPr>
                   <w:tc>
-                    <w:tcPr> </w:tcPr>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil" w:sz="2"/>
+                        <w:left w:val="nil" w:sz="2"/>
+                        <w:bottom w:val="nil" w:sz="2"/>
+                        <w:right w:val="nil" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
                     <w:p>
                       <w:r>
                         <w:t>d</w:t>
@@ -282,7 +280,6 @@
                   </w:tc>
                 </w:tr>
                 <w:tr>
-                  <w:trPr> </w:trPr>
                   <w:tc>
                     <w:tcPr> </w:tcPr>
                     <w:p>
@@ -305,7 +302,8 @@
                     <w:insideH w:val="single" w:sz="2"/>
                     <w:insideV w:val="single" w:sz="2"/>
                   </w:tblBorders>
-                </w:tblPr> <w:tr>
+                </w:tblPr>
+                <w:tr>
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
@@ -356,10 +354,10 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="single" w:sz="2"/>
-                        <w:left w:val="single" w:sz="2"/>
-                        <w:bottom w:val="single" w:sz="2"/>
-                        <w:right w:val="single" w:sz="2"/>
+                        <w:top w:val="nil" w:sz="2"/>
+                        <w:left w:val="nil" w:sz="2"/>
+                        <w:bottom w:val="nil" w:sz="2"/>
+                        <w:right w:val="nil" w:sz="2"/>
                       </w:tcBorders>
                     </w:tcPr>
                     <w:p>
@@ -385,16 +383,15 @@
                   </w:tc>
                 </w:tr>
                 <w:tr>
-                  <w:tcPr>
+                  
+                  <w:tc>
+                    <w:tcPr> 
                     <w:tcBorders>
                       <w:top w:val="single" w:sz="2"/>
                       <w:left w:val="single" w:sz="2"/>
                       <w:bottom w:val="single" w:sz="2"/>
                       <w:right w:val="single" w:sz="2"/>
-                    </w:tcBorders>
-                  </w:tcPr>
-                  <w:tc>
-                    <w:tcPr> </w:tcPr>
+                    </w:tcBorders></w:tcPr>
                     <w:p>
                       <w:r>
                         <w:t>d</w:t>
@@ -417,7 +414,8 @@
                     <w:insideH w:val="single" w:sz="8"/>
                     <w:insideV w:val="single" w:sz="8"/>
                   </w:tblBorders>
-                </w:tblPr> <w:tr>
+                </w:tblPr>
+                <w:tr>
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
@@ -463,19 +461,18 @@
                   </w:tc>
                 </w:tr>
                 <w:tr>
-                  <w:tcPr>
-                    <w:tcBorders>
-                      <w:top w:val="nil" w:sz="2"/>
-                      <w:left w:val="nil" w:sz="2"/>
-                      <w:bottom w:val="nil" w:sz="2"/>
-                      <w:right w:val="nil" w:sz="2"/>
-                    </w:tcBorders>
-                  </w:tcPr>
                   <w:tc>
-                    <w:tcPr> </w:tcPr>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil" w:sz="2"/>
+                        <w:left w:val="nil" w:sz="2"/>
+                        <w:bottom w:val="nil" w:sz="2"/>
+                        <w:right w:val="nil" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
                     <w:p>
                       <w:r>
-                        <w:t>d</w:t>
+                        <w:t>d2</w:t>
                       </w:r>
                     </w:p>
                   </w:tc>
@@ -496,12 +493,11 @@
                   </w:tc>
                 </w:tr>
                 <w:tr>
-                  <w:trPr> </w:trPr>
                   <w:tc>
                     <w:tcPr> </w:tcPr>
                     <w:p>
                       <w:r>
-                        <w:t>d</w:t>
+                        <w:t>d3</w:t>
                       </w:r>
                     </w:p>
                   </w:tc>
@@ -516,17 +512,18 @@
                     <w:left w:val="single" w:sz="2"/>
                     <w:bottom w:val="single" w:sz="2"/>
                     <w:right w:val="single" w:sz="2"/>
-                    <w:insideH w:val="single" w:sz="2"/>
-                    <w:insideV w:val="single" w:sz="2"/>
+                    <w:insideH w:val="single" w:sz="8"/>
+                    <w:insideV w:val="single" w:sz="8"/>
                   </w:tblBorders>
-                </w:tblPr> <w:tr>
+                </w:tblPr>
+                <w:tr>
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
                         <w:top w:val="none" w:sz="2"/>
-                        <w:left w:val="none" w:sz="2"/>
+                        <w:left w:val="single" w:sz="2"/>
                         <w:bottom w:val="none" w:sz="2"/>
-                        <w:right w:val="single" w:sz="2"/>
+                        <w:right w:val="none" w:sz="2"/>
                       </w:tcBorders>
                     </w:tcPr>
                     <w:p>
@@ -541,7 +538,7 @@
                         <w:top w:val="none" w:sz="2"/>
                         <w:left w:val="none" w:sz="2"/>
                         <w:bottom w:val="none" w:sz="2"/>
-                        <w:right w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="8"/>
                       </w:tcBorders>
                     </w:tcPr>
                     <w:p>
@@ -570,15 +567,15 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="single" w:sz="2"/>
-                        <w:left w:val="single" w:sz="2"/>
-                        <w:bottom w:val="single" w:sz="2"/>
-                        <w:right w:val="single" w:sz="2"/>
+                        <w:top w:val="nil" w:sz="2"/>
+                        <w:left w:val="nil" w:sz="2"/>
+                        <w:bottom w:val="nil" w:sz="2"/>
+                        <w:right w:val="nil" w:sz="2"/>
                       </w:tcBorders>
                     </w:tcPr>
                     <w:p>
                       <w:r>
-                        <w:t>d</w:t>
+                        <w:t>d2</w:t>
                       </w:r>
                     </w:p>
                   </w:tc>
@@ -599,19 +596,18 @@
                   </w:tc>
                 </w:tr>
                 <w:tr>
-                  <w:tcPr>
-                    <w:tcBorders>
-                      <w:top w:val="single" w:sz="2"/>
-                      <w:left w:val="single" w:sz="2"/>
-                      <w:bottom w:val="single" w:sz="2"/>
-                      <w:right w:val="single" w:sz="2"/>
-                    </w:tcBorders>
-                  </w:tcPr>
                   <w:tc>
-                    <w:tcPr> </w:tcPr>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="8"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
                     <w:p>
                       <w:r>
-                        <w:t>d</w:t>
+                        <w:t>d3</w:t>
                       </w:r>
                     </w:p>
                   </w:tc>
@@ -626,7 +622,8 @@
         <x:scenario label="and no tc-Borders are defined">
           <x:context mode="docx2hub:resolve-tblBorders">
             <w:tbl>
-              <w:tblPr> </w:tblPr> <w:tr>
+              <w:tblPr> </w:tblPr>
+              <w:tr>
                 <w:tc>
                   <w:tcPr> </w:tcPr>
                   <w:p>
@@ -653,7 +650,6 @@
                 </w:tc>
               </w:tr>
               <w:tr>
-                <w:trPr> </w:trPr>
                 <w:tc>
                   <w:tcPr> </w:tcPr>
                   <w:p>
@@ -686,7 +682,8 @@
           </x:context>
           <x:expect label="all tcBorders are defined">
             <w:tbl>
-              <w:tblPr> </w:tblPr> <w:tr>
+              <w:tblPr> </w:tblPr>
+              <w:tr>
                 <w:tc>
                   <w:tcPr>
                     <w:tcBorders>
@@ -766,16 +763,14 @@
                 </w:tc>
               </w:tr>
               <w:tr>
-                <w:tcPr>
-                  <w:tcBorders>
+                
+                <w:tc>
+                  <w:tcPr> <w:tcBorders>
                     <w:top w:val="nil" w:sz="2"/>
                     <w:left w:val="nil" w:sz="2"/>
                     <w:bottom w:val="nil" w:sz="2"/>
                     <w:right w:val="nil" w:sz="2"/>
-                  </w:tcBorders>
-                </w:tcPr>
-                <w:tc>
-                  <w:tcPr> </w:tcPr>
+                  </w:tcBorders></w:tcPr>
                   <w:p>
                     <w:r>
                       <w:t>d</w:t>
@@ -790,7 +785,8 @@
         <x:scenario label="and some tc-Borders are defined">
           <x:context mode="docx2hub:resolve-tblBorders">
             <w:tbl>
-              <w:tblPr> </w:tblPr> <w:tr>
+              <w:tblPr> </w:tblPr>
+              <w:tr>
                 <w:tc>
                   <w:tcPr>
                     <w:tcBorders>
@@ -832,7 +828,6 @@
                 </w:tc>
               </w:tr>
               <w:tr>
-                <w:trPr> </w:trPr>
                 <w:tc>
                   <w:tcPr> </w:tcPr>
                   <w:p>
@@ -851,7 +846,6 @@
                 </w:tc>
               </w:tr>
               <w:tr>
-                <w:trPr> </w:trPr>
                 <w:tc>
                   <w:tcPr> </w:tcPr>
                   <w:p>
@@ -865,7 +859,8 @@
           </x:context>
           <x:expect label="all tcBorders are defined">
             <w:tbl>
-              <w:tblPr> </w:tblPr> <w:tr>
+              <w:tblPr> </w:tblPr>
+              <w:tr>
                 <w:tc>
                   <w:tcPr>
                     <w:tcBorders>
@@ -945,16 +940,14 @@
                 </w:tc>
               </w:tr>
               <w:tr>
-                <w:tcPr>
-                  <w:tcBorders>
+                
+                <w:tc>
+                  <w:tcPr><w:tcBorders>
                     <w:top w:val="nil" w:sz="2"/>
                     <w:left w:val="nil" w:sz="2"/>
                     <w:bottom w:val="nil" w:sz="2"/>
                     <w:right w:val="nil" w:sz="2"/>
-                  </w:tcBorders>
-                </w:tcPr>
-                <w:tc>
-                  <w:tcPr> </w:tcPr>
+                  </w:tcBorders> </w:tcPr>
                   <w:p>
                     <w:r>
                       <w:t>d</w:t>
@@ -1068,7 +1061,7 @@
                           </w:tr>
                         </w:tbl>
                       </x:context>
-                      <x:expect label="only when tcBorders are undefined or nil">
+                      <x:expect label="only when tcBorders are undefined">
                         <w:tbl>
                           <w:tblPr>
                             <w:tblBorders>
@@ -1133,7 +1126,7 @@
                           </w:tr>
                         </w:tbl>
                       </x:context>
-                      <x:expect label="only when tcBorders are undefined or nil">
+                      <x:expect label="only when tcBorders are undefined">
                         <w:tbl>
                           <w:tblPr>
                             <w:tblBorders>
@@ -1147,10 +1140,10 @@
                             <w:tc>
                               <w:tcPr>
                                 <w:tcBorders>
-                                  <w:top w:val="solid" w:sz="2"/>
-                                  <w:left w:val="solid" w:sz="2"/>
-                                  <w:bottom w:val="solid" w:sz="2"/>
-                                  <w:right w:val="solid" w:sz="2"/>
+                                  <w:top w:val="nil" w:sz="2"/>
+                                  <w:left w:val="nil" w:sz="2"/>
+                                  <w:bottom w:val="nil" w:sz="2"/>
+                                  <w:right w:val="nil" w:sz="2"/>
                                 </w:tcBorders>
                               </w:tcPr>
                             </w:tc>
@@ -1196,7 +1189,7 @@
                           </w:tr>
                         </w:tbl>
                       </x:context>
-                      <x:expect label="only when tcBorders are undefined or nil">
+                      <x:expect label="only when tcBorders are undefined">
                         <w:tbl>
                           <w:tblPr>
                             <w:tblBorders>
@@ -1213,7 +1206,7 @@
                                   <w:top w:val="solid" w:sz="2"/>
                                   <w:left w:val="solid" w:sz="2"/>
                                   <w:bottom w:val="none" w:sz="2"/>
-                                  <w:right w:val="solid" w:sz="2"/>
+                                  <w:right w:val="nil" w:sz="2"/>
                                 </w:tcBorders>
                               </w:tcPr>
                             </w:tc>
@@ -1241,7 +1234,8 @@
                         <w:tbl>
                           <w:tblPr>
                             <w:tblBorders>
-                              <w:top w:val="solid" w:sz="2"/> <w:bottom w:val="none" w:sz="2"/>
+                              <w:top w:val="solid" w:sz="2"/>
+                              <w:bottom w:val="none" w:sz="2"/>
                               <w:right w:val="nil" w:sz="2"/>
                             </w:tblBorders>
                           </w:tblPr>
@@ -1257,11 +1251,12 @@
                           </w:tr>
                         </w:tbl>
                       </x:context>
-                      <x:expect label="only when tcBorders are undefined or nil">
+                      <x:expect label="only when tcBorders are undefined">
                         <w:tbl>
                           <w:tblPr>
                             <w:tblBorders>
-                              <w:top w:val="solid" w:sz="2"/> <w:bottom w:val="none" w:sz="2"/>
+                              <w:top w:val="solid" w:sz="2"/>
+                              <w:bottom w:val="none" w:sz="2"/>
                               <w:right w:val="nil" w:sz="2"/>
                             </w:tblBorders>
                           </w:tblPr>
@@ -1302,7 +1297,8 @@
                         <w:tbl>
                           <w:tblPr>
                             <w:tblBorders>
-                              <w:top w:val="solid" w:sz="2"/> <w:bottom w:val="none" w:sz="2"/>
+                              <w:top w:val="solid" w:sz="2"/>
+                              <w:bottom w:val="none" w:sz="2"/>
                               <w:right w:val="nil" w:sz="2"/>
                             </w:tblBorders>
                           </w:tblPr>
@@ -1319,11 +1315,12 @@
                           </w:tr>
                         </w:tbl>
                       </x:context>
-                      <x:expect label="only when tcBorders are undefined or nil">
+                      <x:expect label="only when tcBorders are undefined">
                         <w:tbl>
                           <w:tblPr>
                             <w:tblBorders>
-                              <w:top w:val="solid" w:sz="2"/> <w:bottom w:val="none" w:sz="2"/>
+                              <w:top w:val="solid" w:sz="2"/>
+                              <w:bottom w:val="none" w:sz="2"/>
                               <w:right w:val="nil" w:sz="2"/>
                             </w:tblBorders>
                           </w:tblPr>
@@ -1361,7 +1358,8 @@
                       <x:context mode="docx2hub:resolve-tblBorders">
                         <w:tbl>
                           <w:tblPr>
-                            <w:tblBorders> <w:right w:val="solid" w:sz="2"/>
+                            <w:tblBorders>
+                              <w:right w:val="solid" w:sz="2"/>
                             </w:tblBorders>
                           </w:tblPr>
                           <w:tr>
@@ -1378,10 +1376,11 @@
                           </w:tr>
                         </w:tbl>
                       </x:context>
-                      <x:expect label="only when tcBorders are undefined or nil">
+                      <x:expect label="only when tcBorders are undefined">
                         <w:tbl>
                           <w:tblPr>
-                            <w:tblBorders> <w:right w:val="solid" w:sz="2"/>
+                            <w:tblBorders>
+                              <w:right w:val="solid" w:sz="2"/>
                             </w:tblBorders>
                           </w:tblPr>
                           <w:tr>
@@ -1418,22 +1417,26 @@
                       <x:context mode="docx2hub:resolve-tblBorders">
                         <w:tbl>
                           <w:tblPr>
-                            <w:tblBorders> <w:right w:val="solid" w:sz="2"/>
+                            <w:tblBorders>
+                              <w:right w:val="solid" w:sz="2"/>
                             </w:tblBorders>
                           </w:tblPr>
                           <w:tr>
                             <w:tc>
                               <w:tcPr>
-                                <w:tcBorders> <w:bottom w:val="none" w:sz="2"/> </w:tcBorders>
+                                <w:tcBorders>
+                                  <w:bottom w:val="none" w:sz="2"/>
+                                </w:tcBorders>
                               </w:tcPr>
                             </w:tc>
                           </w:tr>
                         </w:tbl>
                       </x:context>
-                      <x:expect label="only when tcBorders are undefined or nil">
+                      <x:expect label="only when tcBorders are undefined">
                         <w:tbl>
                           <w:tblPr>
-                            <w:tblBorders> <w:right w:val="solid" w:sz="2"/>
+                            <w:tblBorders>
+                              <w:right w:val="solid" w:sz="2"/>
                             </w:tblBorders>
                           </w:tblPr>
                           <w:tr>
@@ -1479,7 +1482,7 @@
                           </w:tr>
                         </w:tbl>
                       </x:context>
-                      <x:expect label="only when tcBorders are undefined or nil">
+                      <x:expect label="only when tcBorders are undefined">
                         <w:tbl>
                           <w:tblPr>
                             <w:tblBorders> </w:tblBorders>
