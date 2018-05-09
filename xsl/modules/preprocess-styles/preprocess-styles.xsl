@@ -57,7 +57,9 @@
       <xsl:choose>
         <xsl:when test="not(node()) and @*">
           <!-- copy flat prop from style1 -->
-          <xsl:sequence select="."/>
+          <xsl:element name="{name()}">
+            <xsl:sequence select="$style2[concat(local-name(), @w:type) = $ptype]/@*, @*"/>
+          </xsl:element>
         </xsl:when>
         <xsl:otherwise>
           <!-- recursive for nested props -->
@@ -160,6 +162,7 @@
     </xsl:variable>
     <xsl:copy copy-namespaces="no">
       <xsl:apply-templates select="@*" mode="#current"/>
+      <xsl:apply-templates select="node() except w:tcBorders" mode="#current"/>
       <xsl:element name="w:tcBorders">
         <xsl:for-each select="'top','left','bottom','right'">
           <xsl:variable name="outer-border" select="
@@ -231,7 +234,6 @@
           <xsl:apply-templates select="$border" mode="#current"/>
         </xsl:for-each>
       </xsl:element>
-      <xsl:apply-templates select="node() except w:tcBorders" mode="docx2hub:resolve-tblBorders"/>
     </xsl:copy>
   </xsl:template>
   
@@ -263,7 +265,7 @@
               <xsl:variable name="toggle-prop"
                 select="count(($style-toggles[name() = $name][docx2hub:is-toggled(.)]))"
                 as="xs:decimal"/>
-              <xsl:if test="not($self/w:rPr/*[name() = $name])">
+              <xsl:if test="not($self/w:rPr/*[name() = $name]) and $toggle-prop gt 0">
                 <xsl:element name="{$name}">
                   <xsl:attribute name="w:val"
                     select="($toggle-prop mod 2)[1]"
