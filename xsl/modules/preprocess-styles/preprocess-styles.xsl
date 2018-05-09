@@ -6,7 +6,7 @@
   exclude-result-prefixes="xsl xs docx2hub"
   version="2.0">
   
-  <xsl:template match="w:styles/w:style" exclude-result-prefixes="#all" mode="docx2hub:preprocess-styles">
+  <xsl:template match="w:styles/w:style[@w:type = 'table']" exclude-result-prefixes="#all" mode="docx2hub:preprocess-styles">
     <!-- (w:style)* -->
     <xsl:variable name="self" select="."/>
     <xsl:variable name="doc-styles" select=".."/>
