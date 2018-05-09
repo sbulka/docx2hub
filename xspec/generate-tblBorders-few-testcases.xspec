@@ -6,8 +6,2106 @@
 
   <x:scenario label="tblBorders get copied to tcBorders">
 
+    <x:scenario label="in a table consisting of 3x3 cells">
+      <x:scenario label="and no tblBorders are defined">
+        <x:scenario label="and no tcBorders are defined">
+          <x:context mode="docx2hub:resolve-tblBorders">
+            <w:tbl>
+              <w:tblPr>
+                <w:tblBorders> </w:tblBorders>
+              </w:tblPr>
+              <w:tr>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>g1</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>h1</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>i1</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+              </w:tr>
+              <w:tr>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>g2</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>h2</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>i2</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+              </w:tr>
+              <w:tr>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>g3</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>h3</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>i3</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+              </w:tr>
+            </w:tbl>
+          </x:context>
+          <x:expect label="all tcBorders defined as nil">
+            <w:tbl>
+              <w:tblPr>
+                <w:tblBorders> </w:tblBorders>
+              </w:tblPr>
+              <w:tr>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>g1</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>h1</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>i1</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+              </w:tr>
+              <w:tr>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>g2</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>h2</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders>
+                  </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>i2</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+              </w:tr>
+              <w:tr>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>g3</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>h3</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders>
+                  </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>i3</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+              </w:tr>
+            </w:tbl>
+          </x:expect>
+        </x:scenario>
+        <x:scenario label="and some tcBorders are defined">
+          <x:context mode="docx2hub:resolve-tblBorders">
+            <w:tbl>
+              <w:tblPr>
+                <w:tblBorders> </w:tblBorders>
+              </w:tblPr>
+              <w:tr>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="single" w:sz="2"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>g1</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="single" w:sz="2"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>h1</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="single" w:sz="2"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>i1</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+              </w:tr>
+              <w:tr>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>g2</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>h2</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>i2</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+              </w:tr>
+              <w:tr>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="single" w:sz="2"/>
+                      <w:bottom w:val="single" w:sz="2"/>
+                      <w:right w:val="single" w:sz="2"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>g3</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="single" w:sz="2"/>
+                      <w:bottom w:val="single" w:sz="2"/>
+                      <w:right w:val="single" w:sz="2"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>h3</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="single" w:sz="2"/>
+                      <w:bottom w:val="single" w:sz="2"/>
+                      <w:right w:val="single" w:sz="2"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>i3</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+              </w:tr>
+            </w:tbl>
+          </x:context>
+          <x:expect label="all tcBorders are definde">
+            <w:tbl>
+              <w:tblPr>
+                <w:tblBorders> </w:tblBorders>
+              </w:tblPr>
+              <w:tr>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="single" w:sz="2"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>g1</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="single" w:sz="2"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>h1</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="single" w:sz="2"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>i1</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+              </w:tr>
+              <w:tr>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders>
+                  </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>g2</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders>
+                  </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>h2</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders>
+                  </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>i2</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+              </w:tr>
+              <w:tr>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="single" w:sz="2"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="single" w:sz="2"/>
+                      <w:right w:val="single" w:sz="2"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>g3</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="single" w:sz="2"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="single" w:sz="2"/>
+                      <w:right w:val="single" w:sz="2"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>h3</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="single" w:sz="2"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="single" w:sz="2"/>
+                      <w:right w:val="single" w:sz="2"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>i3</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+              </w:tr>
+            </w:tbl>
+          </x:expect>
+        </x:scenario>
+
+      </x:scenario>
+
+      <x:scenario label="and only insideH and insideV are defined ">
+        <x:scenario label="and no tcBorders are defined">
+          <x:context mode="docx2hub:resolve-tblBorders">
+            <w:tbl>
+              <w:tblPr>
+                <w:tblBorders>
+                  <w:insideH w:val="single" w:sz="2"/>
+                  <w:insideV w:val="single" w:sz="2"/>
+                </w:tblBorders>
+              </w:tblPr>
+              <w:tr>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>g1</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>h1</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>i1</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+              </w:tr>
+              <w:tr>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>g2</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>h2</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>i2</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+              </w:tr>
+              <w:tr>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>g3</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>h3</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr> </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>i3</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+              </w:tr>
+            </w:tbl></x:context>
+          <x:expect label="all tcBorders are defined">
+            <w:tbl>
+              <w:tblPr>
+                <w:tblBorders>
+                  <w:insideH w:val="single" w:sz="2"/>
+                  <w:insideV w:val="single" w:sz="2"/>
+                </w:tblBorders>
+              </w:tblPr>
+              <w:tr>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="single" w:sz="2"/>
+                      <w:right w:val="single" w:sz="2"/>
+                    </w:tcBorders>
+                  </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>g1</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr><w:tcBorders>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="single" w:sz="2"/>
+                      <w:bottom w:val="single" w:sz="2"/>
+                      <w:right w:val="single" w:sz="2"/>
+                    </w:tcBorders>
+                  </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>h1</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="single" w:sz="2"/>
+                      <w:bottom w:val="single" w:sz="2"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>i1</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+              </w:tr>
+              <w:tr>
+                <w:tc>
+                  <w:tcPr><w:tcBorders>
+                      <w:top w:val="single" w:sz="2"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="single" w:sz="2"/>
+                      <w:right w:val="single" w:sz="2"/>
+                    </w:tcBorders>
+                  </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>g2</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr><w:tcBorders>
+                      <w:top w:val="single" w:sz="2"/>
+                      <w:left w:val="single" w:sz="2"/>
+                      <w:bottom w:val="single" w:sz="2"/>
+                      <w:right w:val="single" w:sz="2"/>
+                    </w:tcBorders>
+                  </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>h2</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr><w:tcBorders>
+                      <w:top w:val="single" w:sz="2"/>
+                      <w:left w:val="single" w:sz="2"/>
+                      <w:bottom w:val="single" w:sz="2"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders>
+                  </w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>i2</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+              </w:tr>
+              <w:tr>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="single" w:sz="2"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="single" w:sz="2"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>g3</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="single" w:sz="2"/>
+                      <w:left w:val="single" w:sz="2"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="single" w:sz="2"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>h3</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+                <w:tc>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="single" w:sz="2"/>
+                      <w:left w:val="single" w:sz="2"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders></w:tcPr>
+                  <w:p>
+                    <w:r>
+                      <w:t>i3</w:t>
+                    </w:r>
+                  </w:p>
+                </w:tc>
+              </w:tr>
+            </w:tbl>
+          </x:expect>
+
+        </x:scenario>
+        <x:scenario label="and some tcBorders are defined with sometimes w:sz=8">
+
+          <x:context mode="docx2hub:resolve-tblBorders">
+            <w:tbl>
+      <w:tblPr>
+        <w:tblBorders>
+          <w:insideH w:val="single" w:sz="2"/>
+          <w:insideV w:val="single" w:sz="2"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:right w:val="single" w:sz="2"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>g1</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="8"/>
+              <w:bottom w:val="single" w:sz="8"/>
+              <w:right w:val="single" w:sz="2"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>h1</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="single" w:sz="2"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>i1</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="single" w:sz="8"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>g2</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:left w:val="nil"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>h2</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="single" w:sz="8"/>
+              <w:right w:val="single" w:sz="2"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>i2</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="single" w:sz="8"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>g3</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:right w:val="single" w:sz="8"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>h3</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="8"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="single" w:sz="8"/>
+              <w:right w:val="single" w:sz="2"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>i3</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl></x:context>
+
+          <x:expect label="all tcBorders are defined">
+          
+          <w:tbl>
+      <w:tblPr>
+        <w:tblBorders>
+          <w:insideH w:val="single" w:sz="2"/>
+          <w:insideV w:val="single" w:sz="2"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="single" w:sz="2"/>
+              <w:right w:val="single" w:sz="2"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>g1</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="8"/>
+              <w:left w:val="single" w:sz="2"/>
+              <w:bottom w:val="single" w:sz="8"/>
+              <w:right w:val="single" w:sz="2"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>h1</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="single" w:sz="2"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>i1</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="2"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="single" w:sz="8"/>
+              <w:right w:val="nil"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>g2</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="2"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="single" w:sz="2"/>
+              <w:right w:val="single" w:sz="2"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>h2</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="single" w:sz="8"/>
+              <w:right w:val="single" w:sz="2"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>i2</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="single" w:sz="8"/>
+              <w:right w:val="single" w:sz="2"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>g3</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="nil"/>
+              <w:left w:val="single" w:sz="2"/>
+              <w:bottom w:val="nil"/>
+              <w:right w:val="single" w:sz="8"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>h3</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="8"/>
+              <w:left w:val="nil"/>
+              <w:bottom w:val="single" w:sz="8"/>
+              <w:right w:val="single" w:sz="2"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:t>i3</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+          </x:expect>
+        </x:scenario>
+      </x:scenario>
+
+      <x:scenario label="and all tblBorders are defined">
+        <x:scenario label="and no tcBorders are defined">
+          <x:scenario label="and all Borders have @sz=2">
+
+            <x:context mode="docx2hub:resolve-tblBorders">
+              <w:tbl>
+                <w:tblPr>
+                  <w:tblBorders>
+                    <w:top w:val="single" w:sz="2"/>
+                    <w:left w:val="single" w:sz="2"/>
+                    <w:bottom w:val="single" w:sz="2"/>
+                    <w:right w:val="single" w:sz="2"/>
+                    <w:insideH w:val="single" w:sz="2"/>
+                    <w:insideV w:val="single" w:sz="2"/>
+                  </w:tblBorders>
+                </w:tblPr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+              </w:tbl></x:context>
+            <x:expect label="all tcBorders are defined">
+              <w:tbl>
+                <w:tblPr>
+                  <w:tblBorders>
+                    <w:top w:val="single" w:sz="2"/>
+                    <w:left w:val="single" w:sz="2"/>
+                    <w:bottom w:val="single" w:sz="2"/>
+                    <w:right w:val="single" w:sz="2"/>
+                    <w:insideH w:val="single" w:sz="2"/>
+                    <w:insideV w:val="single" w:sz="2"/>
+                  </w:tblBorders>
+                </w:tblPr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders></w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders></w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr><w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr><w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders></w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders></w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr><w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr><w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+              </w:tbl>
+            </x:expect>
+          </x:scenario>
+          <x:scenario label="and insideH and insideV have @sz=8 instead of @sz=2">
+
+            <x:context mode="docx2hub:resolve-tblBorders">
+              <w:tbl>
+                <w:tblPr>
+                  <w:tblBorders>
+                    <w:top w:val="single" w:sz="2"/>
+                    <w:left w:val="single" w:sz="2"/>
+                    <w:bottom w:val="single" w:sz="2"/>
+                    <w:right w:val="single" w:sz="2"/>
+                    <w:insideH w:val="single" w:sz="8"/>
+                    <w:insideV w:val="single" w:sz="8"/>
+                  </w:tblBorders>
+                </w:tblPr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+              </w:tbl></x:context>
+            <x:expect label="all tcBorders are defined">
+              <w:tbl>
+                <w:tblPr>
+                  <w:tblBorders>
+                    <w:top w:val="single" w:sz="2"/>
+                    <w:left w:val="single" w:sz="2"/>
+                    <w:bottom w:val="single" w:sz="2"/>
+                    <w:right w:val="single" w:sz="2"/>
+                    <w:insideH w:val="single" w:sz="8"/>
+                    <w:insideV w:val="single" w:sz="8"/>
+                  </w:tblBorders>
+                </w:tblPr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="single" w:sz="8"/>
+                        <w:right w:val="single" w:sz="8"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:left w:val="single" w:sz="8"/>
+                        <w:bottom w:val="single" w:sz="8"/>
+                        <w:right w:val="single" w:sz="8"/>
+                      </w:tcBorders></w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:left w:val="single" w:sz="8"/>
+                        <w:bottom w:val="single" w:sz="8"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders></w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr><w:tcBorders>
+                        <w:top w:val="single" w:sz="8"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="single" w:sz="8"/>
+                        <w:right w:val="single" w:sz="8"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr><w:tcBorders>
+                        <w:top w:val="single" w:sz="8"/>
+                        <w:left w:val="single" w:sz="8"/>
+                        <w:bottom w:val="single" w:sz="8"/>
+                        <w:right w:val="single" w:sz="8"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="8"/>
+                        <w:left w:val="single" w:sz="8"/>
+                        <w:bottom w:val="single" w:sz="8"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders></w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="8"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="8"/>
+                      </w:tcBorders></w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr><w:tcBorders>
+                        <w:top w:val="single" w:sz="8"/>
+                        <w:left w:val="single" w:sz="8"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="8"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr><w:tcBorders>
+                        <w:top w:val="single" w:sz="8"/>
+                        <w:left w:val="single" w:sz="8"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+              </w:tbl>
+            </x:expect>
+          </x:scenario>
+        </x:scenario>
+
+        <x:scenario label="and some tcBorders are defined">
+          <x:scenario label="and all existing @sz have the value 2">
+
+            <x:context mode="docx2hub:resolve-tblBorders">
+              <w:tbl>
+                <w:tblPr>
+                  <w:tblBorders>
+                    <w:top w:val="single" w:sz="2"/>
+                    <w:left w:val="single" w:sz="2"/>
+                    <w:bottom w:val="single" w:sz="2"/>
+                    <w:right w:val="single" w:sz="2"/>
+                    <w:insideH w:val="single" w:sz="2"/>
+                    <w:insideV w:val="single" w:sz="2"/>
+                  </w:tblBorders>
+                </w:tblPr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders></w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="nil"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="nil"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="nil"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:left w:val="nil"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders></w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="nil"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="single" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+              </w:tbl></x:context>
+            <x:expect label="all tcBorders are defined">
+              <w:tbl>
+                <w:tblPr>
+                  <w:tblBorders>
+                    <w:top w:val="single" w:sz="2"/>
+                    <w:left w:val="single" w:sz="2"/>
+                    <w:bottom w:val="single" w:sz="2"/>
+                    <w:right w:val="single" w:sz="2"/>
+                    <w:insideH w:val="single" w:sz="2"/>
+                    <w:insideV w:val="single" w:sz="2"/>
+                  </w:tblBorders>
+                </w:tblPr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders></w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="nil"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders></w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="nil"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+              </w:tbl>
+            </x:expect>
+          </x:scenario>
+          <x:scenario label="and insideH and insideV have @sz=8 instead of @sz=2">
+
+            <x:context mode="docx2hub:resolve-tblBorders">
+              <w:tbl>
+                <w:tblPr>
+                  <w:tblBorders>
+                    <w:top w:val="single" w:sz="2"/>
+                    <w:left w:val="single" w:sz="2"/>
+                    <w:bottom w:val="single" w:sz="2"/>
+                    <w:right w:val="single" w:sz="2"/>
+                    <w:insideH w:val="single" w:sz="8"/>
+                    <w:insideV w:val="single" w:sz="8"/>
+                  </w:tblBorders>
+                </w:tblPr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders></w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="nil"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="nil"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="nil"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:left w:val="nil"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders></w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="nil"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="single" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr> </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+              </w:tbl>
+            </x:context>
+            <x:expect label="all tcBorders are defined">
+              <w:tbl>
+                <w:tblPr>
+                  <w:tblBorders>
+                    <w:top w:val="single" w:sz="2"/>
+                    <w:left w:val="single" w:sz="2"/>
+                    <w:bottom w:val="single" w:sz="2"/>
+                    <w:right w:val="single" w:sz="2"/>
+                    <w:insideH w:val="single" w:sz="8"/>
+                    <w:insideV w:val="single" w:sz="8"/>
+                  </w:tblBorders>
+                </w:tblPr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders></w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="single" w:sz="8"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:left w:val="single" w:sz="8"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="nil"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i1</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="single" w:sz="8"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="single" w:sz="8"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="8"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="single" w:sz="8"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders></w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i2</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+                <w:tr>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="nil"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>g3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="8"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>h3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                  <w:tc>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="8"/>
+                        <w:left w:val="single" w:sz="8"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders>
+                    </w:tcPr>
+                    <w:p>
+                      <w:r>
+                        <w:t>i3</w:t>
+                      </w:r>
+                    </w:p>
+                  </w:tc>
+                </w:tr>
+              </w:tbl>
+            </x:expect>
+          </x:scenario>
+        </x:scenario>
+      </x:scenario>
+    </x:scenario>
+
     <x:scenario label="in a table consisting of 3 rows with 3, 2, 1 cells">
-      <x:scenario label="all tblBorders are defined">
+      <x:scenario label="and all tblBorders are defined">
         <x:scenario label="and no tcBorders are defined">
           <x:context mode="docx2hub:resolve-tblBorders">
             <w:tbl>
@@ -168,7 +2266,8 @@
                   </w:p>
                 </w:tc>
               </w:tr>
-              <w:tr> <w:tc>
+              <w:tr>
+                <w:tc>
                   <w:tcPr>
                     <w:tcBorders>
                       <w:top w:val="single" w:sz="2"/>
@@ -206,9 +2305,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none"/>
-                        <w:left w:val="none"/>
-                        <w:bottom w:val="none"/>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
                       </w:tcBorders>
                     </w:tcPr>
                     <w:p>
@@ -220,9 +2319,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none"/>
-                        <w:left w:val="none"/>
-                        <w:bottom w:val="none"/>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
                       </w:tcBorders>
                     </w:tcPr>
                     <w:p>
@@ -234,9 +2333,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none"/>
-                        <w:left w:val="none"/>
-                        <w:bottom w:val="none"/>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
                         <w:right w:val="single" w:sz="2"/>
                       </w:tcBorders>
                     </w:tcPr>
@@ -307,9 +2406,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none"/>
-                        <w:left w:val="none"/>
-                        <w:bottom w:val="none"/>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
                         <w:right w:val="single" w:sz="2"/>
                       </w:tcBorders>
                     </w:tcPr>
@@ -322,9 +2421,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none"/>
-                        <w:left w:val="none"/>
-                        <w:bottom w:val="none"/>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
                         <w:right w:val="single" w:sz="2"/>
                       </w:tcBorders>
                     </w:tcPr>
@@ -337,9 +2436,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none"/>
-                        <w:left w:val="none"/>
-                        <w:bottom w:val="none"/>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
                         <w:right w:val="single" w:sz="2"/>
                       </w:tcBorders>
                     </w:tcPr>
@@ -383,15 +2482,14 @@
                   </w:tc>
                 </w:tr>
                 <w:tr>
-                  
                   <w:tc>
-                    <w:tcPr> 
-                    <w:tcBorders>
-                      <w:top w:val="single" w:sz="2"/>
-                      <w:left w:val="single" w:sz="2"/>
-                      <w:bottom w:val="single" w:sz="2"/>
-                      <w:right w:val="single" w:sz="2"/>
-                    </w:tcBorders></w:tcPr>
+                    <w:tcPr>
+                      <w:tcBorders>
+                        <w:top w:val="single" w:sz="2"/>
+                        <w:left w:val="single" w:sz="2"/>
+                        <w:bottom w:val="single" w:sz="2"/>
+                        <w:right w:val="single" w:sz="2"/>
+                      </w:tcBorders></w:tcPr>
                     <w:p>
                       <w:r>
                         <w:t>d</w:t>
@@ -419,9 +2517,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none"/>
-                        <w:bottom w:val="none"/>
-                        <w:right w:val="none"/>
+                        <w:top w:val="nil"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="nil"/>
                       </w:tcBorders>
                     </w:tcPr>
                     <w:p>
@@ -433,9 +2531,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none"/>
-                        <w:left w:val="none"/>
-                        <w:bottom w:val="none"/>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
                       </w:tcBorders>
                     </w:tcPr>
                     <w:p>
@@ -447,9 +2545,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none"/>
-                        <w:left w:val="none"/>
-                        <w:bottom w:val="none"/>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
                         <w:right w:val="single" w:sz="2"/>
                       </w:tcBorders>
                     </w:tcPr>
@@ -520,10 +2618,10 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none"/>
+                        <w:top w:val="nil"/>
                         <w:left w:val="single" w:sz="2"/>
-                        <w:bottom w:val="none"/>
-                        <w:right w:val="none"/>
+                        <w:bottom w:val="nil"/>
+                        <w:right w:val="nil"/>
                       </w:tcBorders>
                     </w:tcPr>
                     <w:p>
@@ -535,9 +2633,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none"/>
-                        <w:left w:val="none"/>
-                        <w:bottom w:val="none"/>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
                         <w:right w:val="single" w:sz="8"/>
                       </w:tcBorders>
                     </w:tcPr>
@@ -550,9 +2648,9 @@
                   <w:tc>
                     <w:tcPr>
                       <w:tcBorders>
-                        <w:top w:val="none"/>
-                        <w:left w:val="none"/>
-                        <w:bottom w:val="none"/>
+                        <w:top w:val="nil"/>
+                        <w:left w:val="nil"/>
+                        <w:bottom w:val="nil"/>
                         <w:right w:val="single" w:sz="2"/>
                       </w:tcBorders>
                     </w:tcPr>
@@ -762,14 +2860,14 @@
                 </w:tc>
               </w:tr>
               <w:tr>
-                
                 <w:tc>
-                  <w:tcPr> <w:tcBorders>
-                    <w:top w:val="nil"/>
-                    <w:left w:val="nil"/>
-                    <w:bottom w:val="nil"/>
-                    <w:right w:val="nil"/>
-                  </w:tcBorders></w:tcPr>
+                  <w:tcPr>
+                    <w:tcBorders>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders></w:tcPr>
                   <w:p>
                     <w:r>
                       <w:t>d</w:t>
@@ -939,14 +3037,14 @@
                 </w:tc>
               </w:tr>
               <w:tr>
-                
                 <w:tc>
                   <w:tcPr><w:tcBorders>
-                    <w:top w:val="nil"/>
-                    <w:left w:val="nil"/>
-                    <w:bottom w:val="nil"/>
-                    <w:right w:val="nil"/>
-                  </w:tcBorders> </w:tcPr>
+                      <w:top w:val="nil"/>
+                      <w:left w:val="nil"/>
+                      <w:bottom w:val="nil"/>
+                      <w:right w:val="nil"/>
+                    </w:tcBorders>
+                  </w:tcPr>
                   <w:p>
                     <w:r>
                       <w:t>d</w:t>
@@ -963,550 +3061,380 @@
     </x:scenario>
 
     <x:scenario label="in a table consisting of only one cell">
-      <x:scenario label="with tblBorder top /@val= solid  and  top /@sz= 2">
-        <x:scenario label="with tblBorder left /@val= solid  and  left /@sz= 2">
-          <x:scenario label="with tblBorder bottom /@val= solid  and  bottom /@sz= 2">
-            <x:scenario label="with tblBorder right /@val= solid  and  right /@sz= 2">
-              <x:scenario label="with tcBorder top /@val= none  and  top /@sz= 2">
-                <x:scenario label="with tcBorder left /@val= none  and  left /@sz= 2">
-                  <x:scenario label="with tcBorder bottom /@val= none  and  bottom /@sz= 2">
-                    <x:scenario label="with tcBorder right /@val= none  and  right /@sz= 2">
-                      <x:context mode="docx2hub:resolve-tblBorders">
-                        <w:tbl>
-                          <w:tblPr>
-                            <w:tblBorders>
-                              <w:top w:val="solid" w:sz="2"/>
-                              <w:left w:val="solid" w:sz="2"/>
-                              <w:bottom w:val="solid" w:sz="2"/>
-                              <w:right w:val="solid" w:sz="2"/>
-                            </w:tblBorders>
-                          </w:tblPr>
-                          <w:tr>
-                            <w:tc>
-                              <w:tcPr>
-                                <w:tcBorders>
-                                  <w:top w:val="none"/>
-                                  <w:left w:val="none"/>
-                                  <w:bottom w:val="none"/>
-                                  <w:right w:val="none"/>
-                                </w:tcBorders>
-                              </w:tcPr>
-                            </w:tc>
-                          </w:tr>
-                        </w:tbl>
-                      </x:context>
-                      <x:expect label="only when tcBorders are undefined or nil">
-                        <w:tbl>
-                          <w:tblPr>
-                            <w:tblBorders>
-                              <w:top w:val="solid" w:sz="2"/>
-                              <w:left w:val="solid" w:sz="2"/>
-                              <w:bottom w:val="solid" w:sz="2"/>
-                              <w:right w:val="solid" w:sz="2"/>
-                            </w:tblBorders>
-                          </w:tblPr>
-                          <w:tr>
-                            <w:tc>
-                              <w:tcPr>
-                                <w:tcBorders>
-                                  <w:top w:val="none"/>
-                                  <w:left w:val="none"/>
-                                  <w:bottom w:val="none"/>
-                                  <w:right w:val="none"/>
-                                </w:tcBorders>
-                              </w:tcPr>
-                            </w:tc>
-                          </w:tr>
-                        </w:tbl>
-                      </x:expect>
-                    </x:scenario>
-                  </x:scenario>
-                </x:scenario>
-              </x:scenario>
-            </x:scenario>
-          </x:scenario>
-        </x:scenario>
+      <x:scenario label="with all tblBorders @val=solid and @sz=2 and all tcBorders @val=nil">
+        <x:context mode="docx2hub:resolve-tblBorders">
+          <w:tbl>
+            <w:tblPr>
+              <w:tblBorders>
+                <w:top w:val="solid" w:sz="2"/>
+                <w:left w:val="solid" w:sz="2"/>
+                <w:bottom w:val="solid" w:sz="2"/>
+                <w:right w:val="solid" w:sz="2"/>
+              </w:tblBorders>
+            </w:tblPr>
+            <w:tr>
+              <w:tc>
+                <w:tcPr>
+                  <w:tcBorders>
+                    <w:top w:val="nil"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                  </w:tcBorders>
+                </w:tcPr>
+              </w:tc>
+            </w:tr>
+          </w:tbl>
+        </x:context>
+        <x:expect label="only when tcBorders are undefined or nil">
+          <w:tbl>
+            <w:tblPr>
+              <w:tblBorders>
+                <w:top w:val="solid" w:sz="2"/>
+                <w:left w:val="solid" w:sz="2"/>
+                <w:bottom w:val="solid" w:sz="2"/>
+                <w:right w:val="solid" w:sz="2"/>
+              </w:tblBorders>
+            </w:tblPr>
+            <w:tr>
+              <w:tc>
+                <w:tcPr>
+                  <w:tcBorders>
+                    <w:top w:val="nil"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                  </w:tcBorders>
+                </w:tcPr>
+              </w:tc>
+            </w:tr>
+          </w:tbl>
+        </x:expect>
+
       </x:scenario>
 
-      <x:scenario label="with tblBorder top /@val= none  and  top /@sz= 2">
-        <x:scenario label="with tblBorder left /@val= none  and  left /@sz= 2">
-          <x:scenario label="with tblBorder bottom /@val= none  and  bottom /@sz= 2">
-            <x:scenario label="with tblBorder right /@val= none  and  right /@sz= 2">
-              <x:scenario label="with tcBorder top /@val= solid  and  top /@sz= 2">
-                <x:scenario label="with tcBorder left /@val= solid  and  left /@sz= 2">
-                  <x:scenario label="with tcBorder bottom /@val= solid  and  bottom /@sz= 2">
-                    <x:scenario label="with tcBorder right /@val= solid  and  right /@sz= 2">
-                      <x:context mode="docx2hub:resolve-tblBorders">
-                        <w:tbl>
-                          <w:tblPr>
-                            <w:tblBorders>
-                              <w:top w:val="none"/>
-                              <w:left w:val="none"/>
-                              <w:bottom w:val="none"/>
-                              <w:right w:val="none"/>
-                            </w:tblBorders>
-                          </w:tblPr>
-                          <w:tr>
-                            <w:tc>
-                              <w:tcPr>
-                                <w:tcBorders>
-                                  <w:top w:val="solid" w:sz="2"/>
-                                  <w:left w:val="solid" w:sz="2"/>
-                                  <w:bottom w:val="solid" w:sz="2"/>
-                                  <w:right w:val="solid" w:sz="2"/>
-                                </w:tcBorders>
-                              </w:tcPr>
-                            </w:tc>
-                          </w:tr>
-                        </w:tbl>
-                      </x:context>
-                      <x:expect label="only when tcBorders are undefined">
-                        <w:tbl>
-                          <w:tblPr>
-                            <w:tblBorders>
-                              <w:top w:val="none"/>
-                              <w:left w:val="none"/>
-                              <w:bottom w:val="none"/>
-                              <w:right w:val="none"/>
-                            </w:tblBorders>
-                          </w:tblPr>
-                          <w:tr>
-                            <w:tc>
-                              <w:tcPr>
-                                <w:tcBorders>
-                                  <w:top w:val="solid" w:sz="2"/>
-                                  <w:left w:val="solid" w:sz="2"/>
-                                  <w:bottom w:val="solid" w:sz="2"/>
-                                  <w:right w:val="solid" w:sz="2"/>
-                                </w:tcBorders>
-                              </w:tcPr>
-                            </w:tc>
-                          </w:tr>
-                        </w:tbl>
-                      </x:expect>
-                    </x:scenario>
-                  </x:scenario>
-                </x:scenario>
-              </x:scenario>
-            </x:scenario>
-          </x:scenario>
-        </x:scenario>
+      <x:scenario label="with all tblBorders @val=nil and all tcBorders @val=solid and @sz=2">
+
+        <x:context mode="docx2hub:resolve-tblBorders">
+          <w:tbl>
+            <w:tblPr>
+              <w:tblBorders>
+                <w:top w:val="nil"/>
+                <w:left w:val="nil"/>
+                <w:bottom w:val="nil"/>
+                <w:right w:val="nil"/>
+              </w:tblBorders>
+            </w:tblPr>
+            <w:tr>
+              <w:tc>
+                <w:tcPr>
+                  <w:tcBorders>
+                    <w:top w:val="solid" w:sz="2"/>
+                    <w:left w:val="solid" w:sz="2"/>
+                    <w:bottom w:val="solid" w:sz="2"/>
+                    <w:right w:val="solid" w:sz="2"/>
+                  </w:tcBorders>
+                </w:tcPr>
+              </w:tc>
+            </w:tr>
+          </w:tbl>
+        </x:context>
+        <x:expect label="only when tcBorders are undefined">
+          <w:tbl>
+            <w:tblPr>
+              <w:tblBorders>
+                <w:top w:val="nil"/>
+                <w:left w:val="nil"/>
+                <w:bottom w:val="nil"/>
+                <w:right w:val="nil"/>
+              </w:tblBorders>
+            </w:tblPr>
+            <w:tr>
+              <w:tc>
+                <w:tcPr>
+                  <w:tcBorders>
+                    <w:top w:val="solid" w:sz="2"/>
+                    <w:left w:val="solid" w:sz="2"/>
+                    <w:bottom w:val="solid" w:sz="2"/>
+                    <w:right w:val="solid" w:sz="2"/>
+                  </w:tcBorders>
+                </w:tcPr>
+              </w:tc>
+            </w:tr>
+          </w:tbl>
+        </x:expect>
+
+
       </x:scenario>
 
-      <x:scenario label="with tblBorder top /@val= solid  and  top /@sz= 2">
-        <x:scenario label="with tblBorder left /@val= solid  and  left /@sz= 2">
-          <x:scenario label="with tblBorder bottom /@val= solid  and  bottom /@sz= 2">
-            <x:scenario label="with tblBorder right /@val= solid  and  right /@sz= 2">
-              <x:scenario label="with tcBorder top /@val= nil  and  top /@sz= 2">
-                <x:scenario label="with tcBorder left /@val= nil  and  left /@sz= 2">
-                  <x:scenario label="with tcBorder bottom /@val= nil  and  bottom /@sz= 2">
-                    <x:scenario label="with tcBorder right /@val= nil  and  right /@sz= 2">
-                      <x:context mode="docx2hub:resolve-tblBorders">
-                        <w:tbl>
-                          <w:tblPr>
-                            <w:tblBorders>
-                              <w:top w:val="solid" w:sz="2"/>
-                              <w:left w:val="solid" w:sz="2"/>
-                              <w:bottom w:val="solid" w:sz="2"/>
-                              <w:right w:val="solid" w:sz="2"/>
-                            </w:tblBorders>
-                          </w:tblPr>
-                          <w:tr>
-                            <w:tc>
-                              <w:tcPr>
-                                <w:tcBorders>
-                                  <w:top w:val="nil"/>
-                                  <w:left w:val="nil"/>
-                                  <w:bottom w:val="nil"/>
-                                  <w:right w:val="nil"/>
-                                </w:tcBorders>
-                              </w:tcPr>
-                            </w:tc>
-                          </w:tr>
-                        </w:tbl>
-                      </x:context>
-                      <x:expect label="only when tcBorders are undefined">
-                        <w:tbl>
-                          <w:tblPr>
-                            <w:tblBorders>
-                              <w:top w:val="solid" w:sz="2"/>
-                              <w:left w:val="solid" w:sz="2"/>
-                              <w:bottom w:val="solid" w:sz="2"/>
-                              <w:right w:val="solid" w:sz="2"/>
-                            </w:tblBorders>
-                          </w:tblPr>
-                          <w:tr>
-                            <w:tc>
-                              <w:tcPr>
-                                <w:tcBorders>
-                                  <w:top w:val="nil"/>
-                                  <w:left w:val="nil"/>
-                                  <w:bottom w:val="nil"/>
-                                  <w:right w:val="nil"/>
-                                </w:tcBorders>
-                              </w:tcPr>
-                            </w:tc>
-                          </w:tr>
-                        </w:tbl>
-                      </x:expect>
-                    </x:scenario>
-                  </x:scenario>
-                </x:scenario>
-              </x:scenario>
-            </x:scenario>
-          </x:scenario>
-        </x:scenario>
+      <x:scenario label="with all tblBorders @val=solid and @sz= 2 and tcBorders bottom and right @val=nil">
+        <x:context mode="docx2hub:resolve-tblBorders">
+          <w:tbl>
+            <w:tblPr>
+              <w:tblBorders>
+                <w:top w:val="solid" w:sz="2"/>
+                <w:left w:val="solid" w:sz="2"/>
+                <w:bottom w:val="solid" w:sz="2"/>
+                <w:right w:val="solid" w:sz="2"/>
+              </w:tblBorders>
+            </w:tblPr>
+            <w:tr>
+              <w:tc>
+                <w:tcPr>
+                  <w:tcBorders>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                  </w:tcBorders>
+                </w:tcPr>
+              </w:tc>
+            </w:tr>
+          </w:tbl>
+        </x:context>
+        <x:expect label="only when tcBorders are undefined">
+          <w:tbl>
+            <w:tblPr>
+              <w:tblBorders>
+                <w:top w:val="solid" w:sz="2"/>
+                <w:left w:val="solid" w:sz="2"/>
+                <w:bottom w:val="solid" w:sz="2"/>
+                <w:right w:val="solid" w:sz="2"/>
+              </w:tblBorders>
+            </w:tblPr>
+            <w:tr>
+              <w:tc>
+                <w:tcPr>
+                  <w:tcBorders>
+                    <w:top w:val="solid" w:sz="2"/>
+                    <w:left w:val="solid" w:sz="2"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                  </w:tcBorders>
+                </w:tcPr>
+              </w:tc>
+            </w:tr>
+          </w:tbl>
+        </x:expect>
       </x:scenario>
 
-      <x:scenario label="with tblBorder top /@val= solid  and  top /@sz= 2">
-        <x:scenario label="with tblBorder left /@val= solid  and  left /@sz= 2">
-          <x:scenario label="with tblBorder bottom /@val= solid  and  bottom /@sz= 2">
-            <x:scenario label="with tblBorder right /@val= solid  and  right /@sz= 2">
-              <x:scenario label="without tcBorder top">
-                <x:scenario label="without tcBorder left">
-                  <x:scenario label="with tcBorder bottom /@val= none  and  bottom /@sz= 2">
-                    <x:scenario label="with tcBorder right /@val= nil  and  right /@sz= 2">
-                      <x:context mode="docx2hub:resolve-tblBorders">
-                        <w:tbl>
-                          <w:tblPr>
-                            <w:tblBorders>
-                              <w:top w:val="solid" w:sz="2"/>
-                              <w:left w:val="solid" w:sz="2"/>
-                              <w:bottom w:val="solid" w:sz="2"/>
-                              <w:right w:val="solid" w:sz="2"/>
-                            </w:tblBorders>
-                          </w:tblPr>
-                          <w:tr>
-                            <w:tc>
-                              <w:tcPr>
-                                <w:tcBorders>
-                                  <w:bottom w:val="none"/>
-                                  <w:right w:val="nil"/>
-                                </w:tcBorders>
-                              </w:tcPr>
-                            </w:tc>
-                          </w:tr>
-                        </w:tbl>
-                      </x:context>
-                      <x:expect label="only when tcBorders are undefined">
-                        <w:tbl>
-                          <w:tblPr>
-                            <w:tblBorders>
-                              <w:top w:val="solid" w:sz="2"/>
-                              <w:left w:val="solid" w:sz="2"/>
-                              <w:bottom w:val="solid" w:sz="2"/>
-                              <w:right w:val="solid" w:sz="2"/>
-                            </w:tblBorders>
-                          </w:tblPr>
-                          <w:tr>
-                            <w:tc>
-                              <w:tcPr>
-                                <w:tcBorders>
-                                  <w:top w:val="solid" w:sz="2"/>
-                                  <w:left w:val="solid" w:sz="2"/>
-                                  <w:bottom w:val="none"/>
-                                  <w:right w:val="nil"/>
-                                </w:tcBorders>
-                              </w:tcPr>
-                            </w:tc>
-                          </w:tr>
-                        </w:tbl>
-                      </x:expect>
-                    </x:scenario>
-                  </x:scenario>
-                </x:scenario>
-              </x:scenario>
-            </x:scenario>
-          </x:scenario>
-        </x:scenario>
-      </x:scenario>
-
-      <x:scenario label="with tblBorder top /@val= solid  and  top /@sz= 2">
-        <x:scenario label="without tblBorder left">
-          <x:scenario label="with tblBorder bottom /@val= none  and  bottom /@sz= 2">
-            <x:scenario label="with tblBorder right /@val= nil  and  right /@sz= 2">
-              <x:scenario label="without tcBorder top">
-                <x:scenario label="without tcBorder left">
-                  <x:scenario label="with tcBorder bottom /@val= none  and  bottom /@sz= 2">
-                    <x:scenario label="with tcBorder right /@val= none  and  right /@sz= 2">
-                      <x:context mode="docx2hub:resolve-tblBorders">
-                        <w:tbl>
-                          <w:tblPr>
-                            <w:tblBorders>
-                              <w:top w:val="solid" w:sz="2"/>
-                              <w:bottom w:val="none"/>
-                              <w:right w:val="nil"/>
-                            </w:tblBorders>
-                          </w:tblPr>
-                          <w:tr>
-                            <w:tc>
-                              <w:tcPr>
-                                <w:tcBorders>
-                                  <w:bottom w:val="none"/>
-                                  <w:right w:val="none"/>
-                                </w:tcBorders>
-                              </w:tcPr>
-                            </w:tc>
-                          </w:tr>
-                        </w:tbl>
-                      </x:context>
-                      <x:expect label="only when tcBorders are undefined">
-                        <w:tbl>
-                          <w:tblPr>
-                            <w:tblBorders>
-                              <w:top w:val="solid" w:sz="2"/>
-                              <w:bottom w:val="none"/>
-                              <w:right w:val="nil"/>
-                            </w:tblBorders>
-                          </w:tblPr>
-                          <w:tr>
-                            <w:tc>
-                              <w:tcPr>
-                                <w:tcBorders>
-                                  <w:top w:val="solid" w:sz="2"/>
-                                  <w:left w:val="nil"/>
-                                  <w:bottom w:val="none"/>
-                                  <w:right w:val="none"/>
-                                </w:tcBorders>
-                              </w:tcPr>
-                            </w:tc>
-                          </w:tr>
-                        </w:tbl>
-                      </x:expect>
-                    </x:scenario>
-                  </x:scenario>
-                </x:scenario>
-              </x:scenario>
-            </x:scenario>
-          </x:scenario>
-        </x:scenario>
+      <x:scenario label="with only some tblBorders defined and some tcBorders defined vs1">
+        <x:context mode="docx2hub:resolve-tblBorders">
+          <w:tbl>
+            <w:tblPr>
+              <w:tblBorders>
+                <w:top w:val="solid" w:sz="2"/>
+                <w:bottom w:val="nil"/>
+                <w:right w:val="nil"/>
+              </w:tblBorders>
+            </w:tblPr>
+            <w:tr>
+              <w:tc>
+                <w:tcPr>
+                  <w:tcBorders>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                  </w:tcBorders>
+                </w:tcPr>
+              </w:tc>
+            </w:tr>
+          </w:tbl>
+        </x:context>
+        <x:expect label="only when tcBorders are undefined">
+          <w:tbl>
+            <w:tblPr>
+              <w:tblBorders>
+                <w:top w:val="solid" w:sz="2"/>
+                <w:bottom w:val="nil"/>
+                <w:right w:val="nil"/>
+              </w:tblBorders>
+            </w:tblPr>
+            <w:tr>
+              <w:tc>
+                <w:tcPr>
+                  <w:tcBorders>
+                    <w:top w:val="solid" w:sz="2"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                  </w:tcBorders>
+                </w:tcPr>
+              </w:tc>
+            </w:tr>
+          </w:tbl>
+        </x:expect>
       </x:scenario>
 
 
 
-      <x:scenario label="with tblBorder top /@val= solid  and  top /@sz= 2">
-        <x:scenario label="without tblBorder left">
-          <x:scenario label="with tblBorder bottom /@val= none  and  bottom /@sz= 2">
-            <x:scenario label="with tblBorder right /@val= nil  and  right /@sz= 2">
-              <x:scenario label="without tcBorder top">
-                <x:scenario label="with tcBorder left /@val= solid  and  bottom /@sz= 2">
-                  <x:scenario label="with tcBorder bottom /@val= none  and  bottom /@sz= 2">
-                    <x:scenario label="with tcBorder right /@val= none  and  right /@sz= 2">
-                      <x:context mode="docx2hub:resolve-tblBorders">
-                        <w:tbl>
-                          <w:tblPr>
-                            <w:tblBorders>
-                              <w:top w:val="solid" w:sz="2"/>
-                              <w:bottom w:val="none"/>
-                              <w:right w:val="nil"/>
-                            </w:tblBorders>
-                          </w:tblPr>
-                          <w:tr>
-                            <w:tc>
-                              <w:tcPr>
-                                <w:tcBorders>
-                                  <w:left w:val="solid" w:sz="2"/>
-                                  <w:bottom w:val="none"/>
-                                  <w:right w:val="none"/>
-                                </w:tcBorders>
-                              </w:tcPr>
-                            </w:tc>
-                          </w:tr>
-                        </w:tbl>
-                      </x:context>
-                      <x:expect label="only when tcBorders are undefined">
-                        <w:tbl>
-                          <w:tblPr>
-                            <w:tblBorders>
-                              <w:top w:val="solid" w:sz="2"/>
-                              <w:bottom w:val="none"/>
-                              <w:right w:val="nil"/>
-                            </w:tblBorders>
-                          </w:tblPr>
-                          <w:tr>
-                            <w:tc>
-                              <w:tcPr>
-                                <w:tcBorders>
-                                  <w:top w:val="solid" w:sz="2"/>
-                                  <w:left w:val="solid" w:sz="2"/>
-                                  <w:bottom w:val="none"/>
-                                  <w:right w:val="none"/>
-                                </w:tcBorders>
-                              </w:tcPr>
-                            </w:tc>
-                          </w:tr>
-                        </w:tbl>
-                      </x:expect>
-                    </x:scenario>
-                  </x:scenario>
-                </x:scenario>
-              </x:scenario>
-            </x:scenario>
-          </x:scenario>
-        </x:scenario>
+      <x:scenario label="with only some tblBorders defined and some tcBorders defined vs2">
+
+        <x:context mode="docx2hub:resolve-tblBorders">
+          <w:tbl>
+            <w:tblPr>
+              <w:tblBorders>
+                <w:top w:val="solid" w:sz="2"/>
+                <w:bottom w:val="nil"/>
+                <w:right w:val="nil"/>
+              </w:tblBorders>
+            </w:tblPr>
+            <w:tr>
+              <w:tc>
+                <w:tcPr>
+                  <w:tcBorders>
+                    <w:left w:val="solid" w:sz="2"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                  </w:tcBorders>
+                </w:tcPr>
+              </w:tc>
+            </w:tr>
+          </w:tbl>
+        </x:context>
+        <x:expect label="only when tcBorders are undefined">
+          <w:tbl>
+            <w:tblPr>
+              <w:tblBorders>
+                <w:top w:val="solid" w:sz="2"/>
+                <w:bottom w:val="nil"/>
+                <w:right w:val="nil"/>
+              </w:tblBorders>
+            </w:tblPr>
+            <w:tr>
+              <w:tc>
+                <w:tcPr>
+                  <w:tcBorders>
+                    <w:top w:val="solid" w:sz="2"/>
+                    <w:left w:val="solid" w:sz="2"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                  </w:tcBorders>
+                </w:tcPr>
+              </w:tc>
+            </w:tr>
+          </w:tbl>
+        </x:expect>
       </x:scenario>
 
-      <x:scenario label="without tblBorder top">
-        <x:scenario label="without tblBorder left">
-          <x:scenario label="without tblBorder bottom">
-            <x:scenario label="with tblBorder right /@val= solid  and  right /@sz= 2">
-              <x:scenario label="with tcBorder top /@val= none  and  top /@sz= 2">
-                <x:scenario label="with tcBorder left /@val= none  and  left /@sz= 2">
-                  <x:scenario label="with tcBorder bottom /@val= none  and  bottom /@sz= 2">
-                    <x:scenario label="with tcBorder right /@val= none  and  right /@sz= 2">
-                      <x:context mode="docx2hub:resolve-tblBorders">
-                        <w:tbl>
-                          <w:tblPr>
-                            <w:tblBorders>
-                              <w:right w:val="solid" w:sz="2"/>
-                            </w:tblBorders>
-                          </w:tblPr>
-                          <w:tr>
-                            <w:tc>
-                              <w:tcPr>
-                                <w:tcBorders>
-                                  <w:top w:val="none"/>
-                                  <w:left w:val="none"/>
-                                  <w:bottom w:val="none"/>
-                                  <w:right w:val="none"/>
-                                </w:tcBorders>
-                              </w:tcPr>
-                            </w:tc>
-                          </w:tr>
-                        </w:tbl>
-                      </x:context>
-                      <x:expect label="only when tcBorders are undefined">
-                        <w:tbl>
-                          <w:tblPr>
-                            <w:tblBorders>
-                              <w:right w:val="solid" w:sz="2"/>
-                            </w:tblBorders>
-                          </w:tblPr>
-                          <w:tr>
-                            <w:tc>
-                              <w:tcPr>
-                                <w:tcBorders>
-                                  <w:top w:val="none"/>
-                                  <w:left w:val="none"/>
-                                  <w:bottom w:val="none"/>
-                                  <w:right w:val="none"/>
-                                </w:tcBorders>
-                              </w:tcPr>
-                            </w:tc>
-                          </w:tr>
-                        </w:tbl>
-                      </x:expect>
-                    </x:scenario>
-                  </x:scenario>
-                </x:scenario>
-              </x:scenario>
-            </x:scenario>
-          </x:scenario>
-        </x:scenario>
+      <x:scenario label="with tblBorder right @val=solid and @sz=2 and all tcBorders @val=nil">
+        <x:context mode="docx2hub:resolve-tblBorders">
+          <w:tbl>
+            <w:tblPr>
+              <w:tblBorders>
+                <w:right w:val="solid" w:sz="2"/>
+              </w:tblBorders>
+            </w:tblPr>
+            <w:tr>
+              <w:tc>
+                <w:tcPr>
+                  <w:tcBorders>
+                    <w:top w:val="nil"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                  </w:tcBorders>
+                </w:tcPr>
+              </w:tc>
+            </w:tr>
+          </w:tbl>
+        </x:context>
+        <x:expect label="only when tcBorders are undefined">
+          <w:tbl>
+            <w:tblPr>
+              <w:tblBorders>
+                <w:right w:val="solid" w:sz="2"/>
+              </w:tblBorders>
+            </w:tblPr>
+            <w:tr>
+              <w:tc>
+                <w:tcPr>
+                  <w:tcBorders>
+                    <w:top w:val="nil"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                  </w:tcBorders>
+                </w:tcPr>
+              </w:tc>
+            </w:tr>
+          </w:tbl>
+        </x:expect>
       </x:scenario>
 
-      <x:scenario label="without tblBorder top">
-        <x:scenario label="without tblBorder left">
-          <x:scenario label="without tblBorder bottom">
-            <x:scenario label="with tblBorder right /@val= solid  and  right /@sz= 2">
-              <x:scenario label="without tcBorder top">
-                <x:scenario label="without tcBorder left">
-                  <x:scenario label="with tcBorder bottom /@val= none  and  bottom /@sz= 2">
-                    <x:scenario label="without tcBorder right">
-                      <x:context mode="docx2hub:resolve-tblBorders">
-                        <w:tbl>
-                          <w:tblPr>
-                            <w:tblBorders>
-                              <w:right w:val="solid" w:sz="2"/>
-                            </w:tblBorders>
-                          </w:tblPr>
-                          <w:tr>
-                            <w:tc>
-                              <w:tcPr>
-                                <w:tcBorders>
-                                  <w:bottom w:val="none"/>
-                                </w:tcBorders>
-                              </w:tcPr>
-                            </w:tc>
-                          </w:tr>
-                        </w:tbl>
-                      </x:context>
-                      <x:expect label="only when tcBorders are undefined">
-                        <w:tbl>
-                          <w:tblPr>
-                            <w:tblBorders>
-                              <w:right w:val="solid" w:sz="2"/>
-                            </w:tblBorders>
-                          </w:tblPr>
-                          <w:tr>
-                            <w:tc>
-                              <w:tcPr>
-                                <w:tcBorders>
-                                  <w:top w:val="nil"/>
-                                  <w:left w:val="nil"/>
-                                  <w:bottom w:val="none"/>
-                                  <w:right w:val="solid" w:sz="2"/>
-                                </w:tcBorders>
-                              </w:tcPr>
-                            </w:tc>
-                          </w:tr>
-                        </w:tbl>
-                      </x:expect>
-                    </x:scenario>
-                  </x:scenario>
-                </x:scenario>
-              </x:scenario>
-            </x:scenario>
-          </x:scenario>
-        </x:scenario>
+
+      <x:scenario label="only tblBorder top @val=solid and @sz=2 and tcBorder bottom @val=nil">
+
+        <x:context mode="docx2hub:resolve-tblBorders">
+          <w:tbl>
+            <w:tblPr>
+              <w:tblBorders>
+                <w:right w:val="solid" w:sz="2"/>
+              </w:tblBorders>
+            </w:tblPr>
+            <w:tr>
+              <w:tc>
+                <w:tcPr>
+                  <w:tcBorders>
+                    <w:bottom w:val="nil"/>
+                  </w:tcBorders>
+                </w:tcPr>
+              </w:tc>
+            </w:tr>
+          </w:tbl>
+        </x:context>
+        <x:expect label="only when tcBorders are undefined">
+          <w:tbl>
+            <w:tblPr>
+              <w:tblBorders>
+                <w:right w:val="solid" w:sz="2"/>
+              </w:tblBorders>
+            </w:tblPr>
+            <w:tr>
+              <w:tc>
+                <w:tcPr>
+                  <w:tcBorders>
+                    <w:top w:val="nil"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="solid" w:sz="2"/>
+                  </w:tcBorders>
+                </w:tcPr>
+              </w:tc>
+            </w:tr>
+          </w:tbl>
+        </x:expect>
       </x:scenario>
 
-      <x:scenario label="without tblBorder top">
-        <x:scenario label="without tblBorder left">
-          <x:scenario label="without tblBorder bottom">
-            <x:scenario label="without tblBorder right">
-              <x:scenario label="without tcBorder top">
-                <x:scenario label="without tcBorder left">
-                  <x:scenario label="without tcBorder bottom">
-                    <x:scenario label="without tcBorder right">
-                      <x:context mode="docx2hub:resolve-tblBorders">
-                        <w:tbl>
-                          <w:tblPr>
-                            <w:tblBorders> </w:tblBorders>
-                          </w:tblPr>
-                          <w:tr>
-                            <w:tc>
-                              <w:tcPr> </w:tcPr>
-                            </w:tc>
-                          </w:tr>
-                        </w:tbl>
-                      </x:context>
-                      <x:expect label="only when tcBorders are undefined">
-                        <w:tbl>
-                          <w:tblPr>
-                            <w:tblBorders> </w:tblBorders>
-                          </w:tblPr>
-                          <w:tr>
-                            <w:tc>
-                              <w:tcPr>
-                                <w:tcBorders>
-                                  <w:top w:val="nil"/>
-                                  <w:left w:val="nil"/>
-                                  <w:bottom w:val="nil"/>
-                                  <w:right w:val="nil"/>
-                                </w:tcBorders>
-                              </w:tcPr>
-                            </w:tc>
-                          </w:tr>
-                        </w:tbl>
-                      </x:expect>
-                    </x:scenario>
-                  </x:scenario>
-                </x:scenario>
-              </x:scenario>
-            </x:scenario>
-          </x:scenario>
-        </x:scenario>
+      <x:scenario label="without any Borders defined">
+        <x:context mode="docx2hub:resolve-tblBorders">
+          <w:tbl>
+            <w:tblPr>
+              <w:tblBorders> </w:tblBorders>
+            </w:tblPr>
+            <w:tr>
+              <w:tc>
+                <w:tcPr> </w:tcPr>
+              </w:tc>
+            </w:tr>
+          </w:tbl>
+        </x:context>
+        <x:expect label="only when tcBorders are undefined">
+          <w:tbl>
+            <w:tblPr>
+              <w:tblBorders> </w:tblBorders>
+            </w:tblPr>
+            <w:tr>
+              <w:tc>
+                <w:tcPr>
+                  <w:tcBorders>
+                    <w:top w:val="nil"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                  </w:tcBorders>
+                </w:tcPr>
+              </w:tc>
+            </w:tr>
+          </w:tbl>
+        </x:expect>
       </x:scenario>
     </x:scenario>
   </x:scenario>
