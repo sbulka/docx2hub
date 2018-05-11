@@ -23,7 +23,7 @@
       </xsl:variable>
       <xsl:element name="{$self/name()}">
         <xsl:sequence
-          select="$stripped-style/@*, docx2hub:get-style-properties($stripped-style, $doc-styles)[not(self::w:basedOn or self::w:tblStylePr)]"
+          select="$stripped-style/@*, docx2hub:get-style-properties($stripped-style, $doc-styles)"
         />
       </xsl:element>
     </xsl:for-each>
