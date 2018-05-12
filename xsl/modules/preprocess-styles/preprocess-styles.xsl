@@ -6,6 +6,13 @@
   exclude-result-prefixes="xsl xs docx2hub"
   version="2.0">
   
+  <xsl:variable name="word-2013-tablestyle-rules" select="
+    every $b in (//w:settings/w:compat//(
+      (xs:decimal(w:compatSetting[@w:name = 'compatibilityMode']/@w:val), 15)[1] lt 15
+      and
+      not(w:compatSetting[@w:name = 'differentiateMultirowTableHeaders'][@w:val = (1, 'true')])
+    )) satisfies not($b)" as="xs:boolean"/>
+  
   <xsl:template match="w:styles/w:style[@w:type = 'table']" exclude-result-prefixes="#all" mode="docx2hub:preprocess-styles">
     <!-- (w:style)* -->
     <xsl:variable name="self" select="."/>
@@ -55,6 +62,9 @@
     <xsl:for-each select="$style1">
       <xsl:variable name="ptype" select="concat(local-name(), @w:type)"/>
       <xsl:choose>
+        <xsl:when test="self::w:tblBorders and not($word-2013-tablestyle-rules)">
+          <xsl:sequence select="."/>
+        </xsl:when>
         <xsl:when test="not(node()) and @*">
           <!-- copy flat prop from style1 -->
           <xsl:element name="{name()}">

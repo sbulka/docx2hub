@@ -422,7 +422,7 @@
   </xsl:template>
 
   <xsl:template match="css:rule/w:tblPr" mode="wml-to-dbk">
-    <xsl:apply-templates select="@*" mode="#current"/>
+    <xsl:apply-templates select="@*[not(some $pa in ../@*/name() satisfies $pa = name())]" mode="#current"/>
   </xsl:template>
 
   <xsl:template match="dbk:* | css:*" mode="wml-to-dbk" priority="-0.1">
