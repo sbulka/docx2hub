@@ -48,12 +48,12 @@
             <m:f>
               <m:num>
                 <m:r>
-                  <w:t xml:space="preserve">a</w:t>
+                  <m:t xml:space="preserve">a</m:t>
                 </m:r>
               </m:num>
               <m:den>
                 <m:r>
-                  <w:t xml:space="preserve">b</w:t>
+                  <m:t xml:space="preserve">b</m:t>
                 </m:r>
               </m:den>
             </m:f>
@@ -91,17 +91,17 @@
           </m:sup>
           <m:e>
             <m:r>
-              <w:t xml:space="preserve">a</w:t>
+              <m:t xml:space="preserve">a</m:t>
             </m:r>
             <m:f>
               <m:num>
                 <m:r>
-                  <w:t xml:space="preserve">b</w:t>
+                  <m:t xml:space="preserve">b</m:t>
                 </m:r>
               </m:num>
               <m:den>
                 <m:r>
-                  <w:t xml:space="preserve">c</w:t>
+                  <m:t xml:space="preserve">c</m:t>
                 </m:r>
               </m:den>
             </m:f>
